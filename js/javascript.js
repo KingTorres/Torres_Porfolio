@@ -34,11 +34,9 @@ function kmbt(mousetrg)
 {
     if (mousetrg == 1)
     {
-        document.getElementById('mt').removeAttribute("style","opacity: 0;")
-        document.getElementById('mt').setAttribute("style","opacity: 1;")
+        document.getElementById('mt').style.display = "block";
     }
     else{
-        document.getElementById('mt').removeAttribute("style","opacity: 1;")
-        document.getElementById('mt').setAttribute("style","opacity: 0;")
+        document.getElementById('mt').style.display = "none";
     }
 }
