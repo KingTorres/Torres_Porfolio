@@ -1,5 +1,6 @@
 span.skill_icon{
-  background-color: #585858;
+  background-color: #3b3b3b;
+  color: #ffffff;
 }
 .skill_icon:hover{
   background-color: #ffffff; color: #000000;
