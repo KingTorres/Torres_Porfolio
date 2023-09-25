@@ -12,16 +12,13 @@ function content1(contentTrigger) //content changer and navbar interface
         case '3':
             selectednav(selval)
             break;
-        case '4':
-            selectednav(selval)
-            break;
         default:
             contentTrigger = 0;
             break;
     }
     function selectednav(trigger)
     {
-        for (x=1;x<=4;x++)
+        for (x=1;x<=3;x++)
             {
                 document.getElementById('nav'+[x]).removeAttribute("style","font-size: medium; font-weight: bold; color: #ffffff;")
                 document.getElementById('div'+[x]).style.display = "none";
