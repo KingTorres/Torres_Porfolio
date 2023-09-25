@@ -22,7 +22,7 @@ span.skill_icon{
   background-color: #8b8b8b;
   color: #ffffff;
   padding: 2%;
-  margin: 2%;
+  margin: 15px;
   box-shadow: 6px 6px 3px #292929;
 }
 .skill_head{
@@ -75,7 +75,7 @@ ul#formHeader{
 a.navtext{
   text-decoration: none;
   color: #ffffff;
-  padding: 15px;
+  padding: 5px;
 }
 a.navtext:hover{
   text-decoration: none;
