@@ -1,8 +1,8 @@
-span.skill_icon{
+span.Label_BnW{
   background-color: #3b3b3b;
   color: #ffffff;
 }
-.skill_icon:hover{
+.Label_BnW:hover{
   background-color: #ffffff; color: #000000;
 }
 /*content1*/
@@ -23,7 +23,7 @@ span.skill_icon{
   background-color: #8b8b8b;
   color: #ffffff;
   padding: 2%;
-  margin: 15px;
+  margin-top: 15px;
   box-shadow: 6px 6px 3px #292929;
 }
 .skill_head{
@@ -51,15 +51,6 @@ ul#formHeader{
   margin-top: -30px;
   padding: 5px;
   width: fit-content;
-}
-.MBT{
-  text-decoration: none;
-  color: #ffffff;
-}
-.MBT:hover{
-  text-decoration: none;
-  font-weight: bold;
-  color: #ffffff;
 }
 .navBar{
   position: fixed;
@@ -94,7 +85,7 @@ a.navtext:active{
   -moz-animation: fadeIn 1s;
   -o-animation: fadeIn 1s;
   -ms-animation: fadeIn 1s;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 @keyframes fadeIn {
   0% { opacity: 0; }
