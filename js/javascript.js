@@ -8,6 +8,7 @@ function content1(contentTrigger) //content changer and navbar interface
             break;
         case '2':
             selectednav(selval)
+            RepeatedWelcomeLoop()
             break;
         case '3':
             selectednav(selval)
@@ -35,5 +36,15 @@ function kmbt(mousetrg)
     }
     else{
         document.getElementById('mt').style.display = "none";
+    }
+}
+const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
+async function RepeatedWelcomeLoop() {
+    for (let i = 1; i <= 3; i++) {
+        document.getElementById('skill_'+[i]).style.display = "none";
+    }
+    for (let i = 1; i <= 3; i++) {
+        await sleepNow(500)
+        document.getElementById('skill_'+[i]).style.display = "block";
     }
 }
