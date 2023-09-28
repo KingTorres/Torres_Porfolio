@@ -1,9 +1,85 @@
+span.mtlabel{
+  background: linear-gradient(141deg, #222222, #222222, #0e12ff, #222222, #222222);
+  background-size: 600% 600%;
+  padding: 5px;
+  border: 1px solid #888888;
+  width: fit-content;
+  -webkit-animation: GradientScan 1s ease infinite;
+  -moz-animation: GradientScan 1s ease infinite;
+  animation: GradientScan 1s ease infinite;
+}
+span.mtlabel:hover{
+  background: #ffffff;
+  color: #000000;
+}
+.Background_Position{
+  text-decoration: none;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 20px;
+  height: 30px;
+}
+.Background_works{
+  list-style-type: circle;
+}
+.Background_Item{
+  margin: 20px;
+}
+.navbar_hover{
+  border-top: 2px solid #42d9ff;
+  border-radius: 0px 0px 10px 10px;
+  background: rgba(0,0,0,0.7);
+  color: #ffffff;
+  font-weight: bolder;
+  text-align: center;
+}
+.navbar_hover2{
+  border-top: 2px solid #42d9ff;
+  border-radius: 0px 0px 10px 10px;
+  background: rgba(0,0,0,0.7);
+  color: #ffffff;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: -21px;
+}
+.navbar_hover:hover{
+  background-color: #0e12ff;
+}
+.navbar_hover2:hover{
+  background-color: #0e12ff;
+}
+.CallCard{
+  border: 1px solid #ffffff;
+  box-shadow: 6px 6px 3px #0e0e0e;
+  color: #ffffff;
+  margin-top: -30px;
+  padding: 10px;
+  background: linear-gradient(141deg, #000000, #000000, #0206e7, #000000, #000000);
+  background-size: 600% 600%;
+  -webkit-animation: GradientScan 1s ease;
+  -moz-animation: GradientScan 1s ease;
+  animation: GradientScan 1s ease;
+}
+a.cardName{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+.picture{
+  border-radius: 20%;
+  border: 1px solid #000000;
+  background-color: #0206e7;
+  width: 100px;
+  height: 100px;
+  display: block;
+}
 span.Label_BnW{
-  background-color: #3b3b3b;
+  background-color: #525252;
   color: #ffffff;
 }
 .Label_BnW:hover{
-  background-color: #ffffff; color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 /*content1*/
 .skill_item{
@@ -17,6 +93,7 @@ span.Label_BnW{
   border-radius: 8px 8px 8px 8px;
   background-color: #3b3b3b;
   width: 98%;
+  margin: 2%;
  }
 .skill_content{
   border-radius: 10px 10px 10px 10px;
@@ -43,14 +120,6 @@ span.Label_BnW{
 ul#formHeader{
   background: rgba(0,0,0,0.7);
 }
-.aboutMBT{
-  background-color: #505050;
-  box-shadow: 6px 6px 3px #0e0e0e;
-  color: #ffffff;
-  margin-top: -30px;
-  padding: 10px;
-  width: fit-content;
-}
 .navBar{
   position: fixed;
   width: 100%;
@@ -69,8 +138,7 @@ a.navtext{
 }
 a.navtext:hover{
   text-decoration: none;
-  color: #76adff;
-  font-weight: bold;
+  color: #42d9ff;
 }
 a.navtext:visited{
   color: #ffffff;
@@ -79,9 +147,6 @@ a.navtext:active{
   color: #646464;
 }
 
-.topMargin{
-  margin-top: 40px;
-}
 img#icon{
   width: 30px;
   height: 30px;
@@ -116,11 +181,11 @@ img#icon{
 }
 
 .gradientAnimation1 {
-  background: linear-gradient(141deg, #3b3b3b, #3b3b3b, #0206e7, #000000, #0e0e0e);
+  background: linear-gradient(141deg, #000000, #000000, #0206e7, #000000, #000000);
   background-size: 600% 600%;
-  -webkit-animation: GradientScan 2s ease;
-  -moz-animation: GradientScan 2s ease;
-  animation: GradientScan 2s ease;
+  -webkit-animation: GradientScan 3s ease infinite;
+  -moz-animation: GradientScan 3s ease infinite;
+  animation: GradientScan 3s ease infinite;
 }
 @-webkit-keyframes GradientScan {
   0%{background-position:0% 50%} /*view area: left right*/
@@ -136,4 +201,37 @@ img#icon{
   0%{background-position:100% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
+}
+.slideup{
+  position: relative;
+  top: 0px;
+  -webkit-animation: slideUp 1s forwards;
+  -moz-animation: slideUp 1s forwards;
+  animation: slideUp 1s forwards;
+}
+@-moz-keyframes slidedown{
+  100%{top: -37px;}
+}
+@-moz-keyframes slidedown{
+  100%{top: -37px;}
+}
+@keyframes slideUp {
+  100%{top: -37px;}
+}
+
+.slidedown{
+  position: relative;
+  top: -40px;
+  -webkit-animation: slidedown 1s forwards;
+  -moz-animation: slidedown 1s forwards;
+  animation: slidedown 1s forwards;
+}
+@-moz-keyframes slidedown{
+  100%{top: 0px;}
+}
+@-moz-keyframes slidedown{
+  100%{top: 0px;}
+}
+@keyframes slidedown {
+  100%{top: 0px;}
 }

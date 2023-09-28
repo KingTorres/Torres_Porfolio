@@ -6,32 +6,39 @@
   <title>Michael Torres (Portfolio)</title> 
   <link rel="stylesheet" href="css/Style.css">
   <script src="js/javascript.js"></script>
-  
   <!--Bootstrap-->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/jquery.min.js"></script>
   <script src="css/bootstrap.min.js"></script>
-
-<div class="navBar" style="cursor: pointer;">
-  <div class="container">
-    <ul id="formHeader" class="breadcrumb">
-      <li><a id="nav1" class="navtext" style="font-size: medium; font-weight: bold; color: #ffffff;" onclick="content1('1')">Home</a></li>
-      <li><a id="nav2" class="navtext" onclick="content1('2')">Skills</a></li>
-      <li><a id="nav3" class="navtext" onclick="content1('3')">Projects</a></li>
-      <div class="pull-right"><a onmouseover="kmbt('1')" onmouseout="kmbt('2')"><span class="badge Label_BnW">Michael Torres</span></a></div>
-    </ul>
-    <div id="mt" class="aboutMBT pull-right" style="display: none;">
-      Email: torres.michael36@gmail.com<br>
-      Contact: +639493923708
+  <div class="navBar" style="cursor: pointer;">
+    <div class="container">
+      <ul id="formHeader" class="breadcrumb" style="display: block;">
+        <li><a id="nav1" class="navtext" style="font-size: medium; font-weight: bold; color: #ffffff;" onclick="content1('1')">Home</a></li>
+        <li><a id="nav2" class="navtext" onclick="content1('2')">Skills</a></li>
+        <li><a id="nav3" class="navtext" onclick="content1('3')">Background</a></li>
+        <div class="pull-right"><a onmouseover="kmbt('1')" onmouseout="kmbt('2')"><span class="badge mtlabel">Torres</span></a></div>
+      </ul>
+      <div id="navopen" class="navbar_hover" onclick="nav_hover('1')" style="display: none;">︾</div>
+      <div id="navclose" class="navbar_hover2" onclick="nav_hover('2')" style="display: block;">︽</div>
+      <div id="mt" class="CallCard pull-right" style="display: none;">
+        <ul class="list-inline">
+          <li><img class="picture" src="images/profile.jpg" alt="mbt"></li>
+          <li>
+            <a class="cardName">Michael Torres</a><br>
+            Email: torres.michael36@gmail.com<br>
+            Contact: +639493923708<br>
+            Company: Circle Graphics Inc.<br>
+            Position: Data Conversion
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 </head>
-
-<body style="background-color: #4d4d4d;">  
-<div class="container">
-  <div id="div1" class="fadein topMargin" style="display: block;"><!--content 1-->Item 1 Content</div>
-  <div id="div2" class="topMargin" style="display: none;"><!--content 2-->
+<body style="background-color: #4d4d4d;">
+<div id="bodyDiv" class="container" style="padding-top: 60px;">
+  <div id="div1" class="fadein" style="display: block;"><!--content 1-->Item 1 Content</div>
+  <div id="div2" style="display: none;"><!--content 2-->
     <div class="row">
       <div id="skill_1" class="col-lg-4 col-md-4 col-sm-4 fadein">
         <div class="skill_content">
@@ -46,7 +53,6 @@
           </div>
         </div>
       </div>
-
       <div id="skill_2" class="col-lg-4 col-md-4 col-sm-4 fadein">
         <div class="skill_content">
           <div class="skill_head gradientAnimation1 center-block">Graphic Arts</div>
@@ -60,7 +66,6 @@
           </div>
         </div>
       </div>
-
       <div id="skill_3" class="col-lg-4 col-md-4 col-sm-4 fadein">
         <div class="skill_content">
           <div class="skill_head gradientAnimation1 center-block">Data Conversion</div>
@@ -74,8 +79,82 @@
       </div>
     </div>
   </div>
-
-  <div id="div3" class="fadein topMargin" style="display: none;"><!--content 3-->Item 3 Content</div>
+  <div id="div3" class="fadein topMargin" style="display: none;"><!--content 3-->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+          <div id="Background_1" class="fadein">
+            <div class="skill_content">
+              <div class="skill_head gradientAnimation1 center-block">Circle Graphics Inc. (Present)
+              </div>
+              <div class="row skill_body center-block">
+                  <div class="Background_Item">
+                    <div class="Background_Position">Data Conversion Specialist (Oct. 2019 - Present)</div>
+                    <ul class="Background_works">
+                      <li>Assess and Convert Document into Textfile(.txt) Script to run in Indesign(Layout Team).</li>
+                      <li>Convert Manuscript into MSWord Documents.</li>
+                      <li>Create and Performing Macros.</li>
+                      <li>XML Conversion.</li>
+                      <li>E-Book & ePub Conversion.</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div id="Background_3" class="fadein">
+            <div class="skill_content">
+              <div class="skill_head gradientAnimation1 center-block">Sunlife Financial Philippines (2016)
+              </div>
+              <div class="row skill_body center-block">
+                  <div class="Background_Item">
+                    <div class="Background_Position">I.T. Support Assistant (2016)</div>
+                    <ul class="Background_works">
+                      <li>Re-Image Desktop and Laptop via network.</li>
+                      <li>Assist advisor for their software installation.</li>
+                      <li>Re-installation, Un-installation.</li>
+                      <li>Repair, Upgrade Request.</li>
+                      <li>Re-inventory.</li>
+                      <li>hp ticketing.</li>
+                      <li>Troubleshooting.</li>
+                      <li>Wipe HDD.</li>
+                      <li>Remote Desktop.</li>                   
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Background_2" class="col-lg-6 col-md-6 col-sm-6 fadein">
+        <div class="skill_content">
+          <div class="skill_head gradientAnimation1 center-block">Asiatype Inc. (Jan. 2017 - Oct. 2019)
+          </div>
+          <div class="row skill_body center-block">
+              <div class="Background_Item">
+                <div class="Background_Position">Graphic Artist (Feb. 2018 - Oct. 2019)</div>
+                <ul class="Background_works">
+                  <li>Attends orientation meetings to discuss and understand project requirements.</li>
+                  <li>Locates or receives an electronic file containing source material; maintains file integrity and security.</li>
+                  <li>May handle printed material as the source of images.</li>
+                  <li>Uses the required illustration or layout software to process an image.</li>
+                  <li>Works with Quality staff members to ensure that materials conform to accepted rules of style and format.</li>
+                  <li>Carries out proofreading corrections and author's amendments as required.</li>
+                  <li>Creates final format of materials for sending to clients as required by the project guidelines.</li>
+                  <li>Documents tasks and time spent in Time Report Daily, and also issues and process improvements for management use.</li>
+                </ul>
+                <div class="Background_Position">Document Analyst (Jan. 2017 - Feb. 2018)</div>
+                <ul class="Background_works">
+                  <li>Assess and Convert document into XML format using Word Styling Process in Conformance to Client's DTD.</li>
+                  <li>Check the Output by using the Rendering Tool provided by Client.</li>
+                  <li>Perform Word-styling</li>
+                  <li>Image creation</li>
+                  <li>Equation creation Processes.</li>
+                  <li>Assess the document, determine its complexity and prepare it's word-styling process.<br></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
