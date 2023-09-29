@@ -16,10 +16,12 @@ span.mtlabel:hover{
   text-decoration: none;
   text-align: left;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 15px;
   height: 30px;
 }
 .Background_works{
+  margin-top: 5%;
+  margin-bottom: 3%;
   list-style-type: circle;
 }
 .Background_Item{
