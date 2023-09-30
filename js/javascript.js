@@ -65,6 +65,8 @@ async function Intro(onstatus) {
     nav_hover(onstatus)
     document.getElementById('navopen').style.display = "none";
     document.getElementById('intro6').style.display = "none";
+    document.body.setAttribute("style","background-color: #000000;")
+    document.getElementById('IntroLabel').style.display = "none";
     for(i=1;i<=5;i++)
     {
         document.getElementById('intro'+[i]).setAttribute("class","container center-block Intro IntroSlideIn")
@@ -97,6 +99,8 @@ async function Intro(onstatus) {
     }
     document.getElementById('intro6').setAttribute("class","row IntroSlideIn")
     document.getElementById('intro6').style.display = "block";
+    document.body.setAttribute("style","background-color: #4d4d4d;")
+    document.getElementById('IntroLabel').style.display = "block";
     nav_hover('1')
 }
 function nav_hover(navval)
