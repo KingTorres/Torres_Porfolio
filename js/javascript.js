@@ -5,6 +5,7 @@ function content1(contentTrigger) //content changer and navbar interface
     {
         case '1':
             selectednav(selval) //selval pass to private function
+            Intro('2')
             break;
         case '2':
             selectednav(selval)
@@ -60,8 +61,44 @@ async function Background_Item_Animation_Enable() {
         document.getElementById('Background_'+[i]).style.display = "block";
     }
 }
-
-
+async function Intro(onstatus) {
+    nav_hover(onstatus)
+    document.getElementById('navopen').style.display = "none";
+    document.getElementById('intro6').style.display = "none";
+    for(i=1;i<=5;i++)
+    {
+        document.getElementById('intro'+[i]).setAttribute("class","container center-block Intro IntroSlideIn")
+        document.getElementById('intro'+[i]).style.display = "none";
+    }
+    await sleepNow(2000)
+    document.getElementById('intro1').style.display = "block";
+    await sleepNow(3500) //entrance
+    document.getElementById('intro1').setAttribute("class","container center-block Intro fadeout")
+    await sleepNow(3000) //exit
+    document.getElementById('intro1').style.display = "none";
+    document.getElementById('intro2').style.display = "block";
+    await sleepNow(3500) //entrance
+    document.getElementById('intro2').setAttribute("class","container center-block Intro")
+    await sleepNow(3500) //exit
+    document.getElementById('intro3').style.display = "block";
+    await sleepNow(4000) //exit
+    document.getElementById('intro4').style.display = "block";
+    await sleepNow(3500) //exit
+    document.getElementById('intro5').style.display = "block";
+    await sleepNow(5000) //exit
+    for(i=2;i<=5;i++)
+    {
+        document.getElementById('intro'+[i]).setAttribute("class","container center-block Intro fadeout")
+    }
+    await sleepNow(2000) //exit
+    for(i=2;i<=5;i++)
+    {
+        document.getElementById('intro'+[i]).style.display = "none";
+    }
+    document.getElementById('intro6').setAttribute("class","row IntroSlideIn")
+    document.getElementById('intro6').style.display = "block";
+    nav_hover('1')
+}
 function nav_hover(navval)
 {
     if(navval == 1)
@@ -79,4 +116,7 @@ function nav_hover(navval)
         document.getElementById('navopen').setAttribute("style","display: block; margin-top: -21px;")
         document.getElementById('bodyDiv').style.paddingTop = "20px";
     }
+}
+function cardclose(){
+    document.getElementById('mt').style.display = "none";
 }

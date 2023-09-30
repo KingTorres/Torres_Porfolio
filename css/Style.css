@@ -1,3 +1,11 @@
+/*Home*/
+.Intro{
+  margin-top: 2%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 35px;
+}
+
 span.mtlabel{
   background: linear-gradient(141deg, #222222, #222222, #0e12ff, #222222, #222222);
   background-size: 600% 600%;
@@ -36,19 +44,7 @@ span.mtlabel:hover{
   font-weight: bolder;
   text-align: center;
 }
-.navbar_hover2{
-  border-top: 2px solid #42d9ff;
-  border-radius: 0px 0px 10px 10px;
-  background: rgba(0,0,0,0.7);
-  color: #ffffff;
-  font-weight: bolder;
-  text-align: center;
-  margin-top: -21px;
-}
 .navbar_hover:hover{
-  background-color: #0e12ff;
-}
-.navbar_hover2:hover{
   background-color: #0e12ff;
 }
 .CallCard{
@@ -183,6 +179,34 @@ img#icon{
   100% { opacity: 1; }
 }
 
+.fadeout {
+  animation: fadeOut 3s;
+  -webkit-animation: fadeOut 3s;
+  -moz-animation: fadeOut 3s;
+  -o-animation: fadeOut 3s;
+  -ms-animation: fadeOut 3s;
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-ms-keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 .gradientAnimation1 {
   background: linear-gradient(141deg, #000000, #000000, #0206e7, #000000, #000000);
   background-size: 600% 600%;
@@ -190,8 +214,8 @@ img#icon{
   -moz-animation: GradientScan 3s ease infinite;
   animation: GradientScan 3s ease infinite;
 }
-@-webkit-keyframes GradientScan {
-  0%{background-position:0% 50%} /*view area: left right*/
+@keyframes GradientScan {
+  0%{background-position:100% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
@@ -200,11 +224,22 @@ img#icon{
   0%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
-@keyframes GradientScan {
-  0%{background-position:100% 50%}
+@-webkit-keyframes GradientScan {
+  0%{background-position:0% 50%} /*view area: left right*/
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
+@-o-keyframes GradientScan {
+  0%{background-position:0% 50%} /*view area: left right*/
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-ms-keyframes GradientScan {
+  0%{background-position:0% 50%} /*view area: left right*/
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 .slideup{
   position: relative;
   top: 0px;
@@ -212,13 +247,19 @@ img#icon{
   -moz-animation: slideUp 1s forwards;
   animation: slideUp 1s forwards;
 }
-@-moz-keyframes slidedown{
-  100%{top: -37px;}
-}
-@-moz-keyframes slidedown{
-  100%{top: -37px;}
-}
 @keyframes slideUp {
+  100%{top: -37px;}
+}
+@-moz-keyframes slideUp{
+  100%{top: -37px;}
+}
+@-webkit-keyframes slideUp{
+  100%{top: -37px;}
+}
+@-o-keyframes slideUp{
+  100%{top: -37px;}
+}
+@-ms-keyframes slideUp{
   100%{top: -37px;}
 }
 
@@ -229,12 +270,41 @@ img#icon{
   -moz-animation: slidedown 1s forwards;
   animation: slidedown 1s forwards;
 }
-@-moz-keyframes slidedown{
-  100%{top: 0px;}
-}
-@-moz-keyframes slidedown{
-  100%{top: 0px;}
-}
 @keyframes slidedown {
+  100%{top: 0px;}
+}
+@-moz-keyframes slidedown{
+  100%{top: 0px;}
+}
+@-webkit-keyframes slidedown{
+  100%{top: 0px;}
+}
+@-o-keyframes slidedown{
+  100%{top: 0px;}
+}
+@-ms-keyframes slidedown{
+  100%{top: 0px;}
+}
+
+.IntroSlideIn{
+  position: relative;
+  top: 100px;
+  -webkit-animation: slideUpIntro 2s forwards;
+  -moz-animation: slideUpIntro 2s forwards;
+  animation: slideUpIntro 2s forwards;
+}
+@keyframes slideUpIntro {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100%{top: 0px;}
+}
+@-o-keyframes slideUpIntro{
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100%{top: 0px;}
+}
+@-ms-keyframes slideUpIntro{
+  0% {opacity: 0;}
+  50% {opacity: 1;}
   100%{top: 0px;}
 }
