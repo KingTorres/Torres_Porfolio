@@ -72,18 +72,16 @@ async function Intro(onstatus) {
         document.getElementById('intro'+[i]).setAttribute("class","container center-block Intro IntroSlideIn")
         document.getElementById('intro'+[i]).style.display = "none";
     }
-    await sleepNow(2000)
+    await sleepNow(1000)
     document.getElementById('intro1').style.display = "block";
     await sleepNow(3500) //entrance
     document.getElementById('intro1').setAttribute("class","container center-block Intro fadeout")
-    await sleepNow(3000) //exit
+    await sleepNow(2500) //exit
     document.getElementById('intro1').style.display = "none";
     document.getElementById('intro2').style.display = "block";
-    await sleepNow(3500) //entrance
-    document.getElementById('intro2').setAttribute("class","container center-block Intro")
-    await sleepNow(3500) //exit
-    document.getElementById('intro3').style.display = "block";
     await sleepNow(4000) //exit
+    document.getElementById('intro3').style.display = "block";
+    await sleepNow(3500) //exit
     document.getElementById('intro4').style.display = "block";
     await sleepNow(3500) //exit
     document.getElementById('intro5').style.display = "block";
