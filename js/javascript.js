@@ -62,6 +62,8 @@ async function Background_Item_Animation_Enable() {
     }
 }
 async function Intro(onstatus) {
+    document.getElementById('footer').style.display = "none";
+    document.getElementById('bodyDiv').style.display = "block";
     nav_hover(onstatus)
     document.getElementById('navopen').style.display = "none";
     document.getElementById('intro6').style.display = "none";
@@ -100,6 +102,7 @@ async function Intro(onstatus) {
     document.body.setAttribute("style","background-color: #4d4d4d;")
     document.getElementById('IntroLabel').style.display = "block";
     nav_hover('1')
+    document.getElementById('footer').style.display = "block";
 }
 function nav_hover(navval)
 {
