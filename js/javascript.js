@@ -37,9 +37,11 @@ function kmbt(mousetrg)
     {
         document.getElementById('mt').setAttribute("style","display: block; position: relative; z-index: 2;")
         document.getElementById('mt').setAttribute("class","CallCard pull-right")
+        document.getElementById('TorresLabel').style.display = "none";
     }
     else{
         document.getElementById('mt').setAttribute("style","display: none;")
+        document.getElementById('TorresLabel').style.display = "block";
     }
 }
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
@@ -121,7 +123,4 @@ function nav_hover(navval)
         document.getElementById('navopen').setAttribute("style","display: block; margin-top: -21px;")
         document.getElementById('bodyDiv').style.paddingTop = "20px";
     }
-}
-function cardclose(){
-    document.getElementById('mt').style.display = "none";
 }

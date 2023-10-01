@@ -77,6 +77,11 @@ a.cardName{
   color: #ffffff;
   font-size: 20px;
 }
+a.cardName:hover{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
 .picture{
   border-radius: 20%;
   border: 1px solid #000000;
