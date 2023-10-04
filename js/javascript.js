@@ -124,3 +124,15 @@ function nav_hover(navval)
         document.getElementById('bodyDiv').style.paddingTop = "20px";
     }
 }
+//disable inspect
+document.addEventListener("keydown", function (event){
+    if (event.ctrlKey){
+       event.preventDefault();
+    }
+    if(event.keyCode == 123){
+       event.preventDefault();
+    }
+});
+document.addEventListener('contextmenu', 
+     event => event.preventDefault()
+);
