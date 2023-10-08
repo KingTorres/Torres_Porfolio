@@ -200,26 +200,17 @@
     border-radius: 50%;
     background: #000000;
 }
-.Enlarged {
-    background-attachment: fixed; /*important*/
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    border-radius: 0%;
-}
 
 .Enlarging {
     background-image: url('images/bg.jpg');
     background-attachment: fixed; /*important*/
     background-size: cover;
     background-position: center center;
-    animation: Enlarging 0.5s;
-    -webkit-animation: Enlarging 0.5s;
-    -moz-animation: Enlarging 0.5s;
-    -o-animation: Enlarging 0.5s;
-    -ms-animation: Enlarging 0.5s;
+    animation: Enlarging 1s;
+    -webkit-animation: Enlarging 1s;
+    -moz-animation: Enlarging 1s;
+    -o-animation: Enlarging 1s;
+    -ms-animation: Enlarging 1s;
   }
   @keyframes Enlarging {
     0% { height: 0%; width: 0%; }
