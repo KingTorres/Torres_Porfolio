@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Torres (Portfolio)</title> 
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../css/bootstrap.min.js"></script>
+  <!-- MyStyleAndScript -->
+  <link rel="stylesheet" href="../css/Style.css">
+  <script src="../js/javascript.js"></script>
+  <!-- Adding Background Page -->
+  <link rel="stylesheet" href="CertificatePage.css">
+</head>
+<body>
+<div class="floater">
+  <div id="sideMenu" class="sideMenu float-right">
+    <div id="closeSideMenu" class="closeSideMenu" onclick="closeSideMenu()">
+      ✕
+    </div>
+    <div onclick="location.href='../Intro/Intro.html'">Intro</div>
+    <div onclick="location.href='../Skills/Skills.html'">Skills</div>
+    <div onclick="location.href='../Background/Background.html'">Background</div>
+    <div style="color: #ffffff; font-weight: bold;">Certificate</div>
+  </div>
+  <div id="CallCard" class="CallCard float-left">
+    <div class="closeCallCard float-right" onclick="closeCallCard()">✕</div>
+    <img class="Prof_Pic" src="../images/profile.jpg" alt="Profile">
+    <p><b>Michael Torres</b><br/>
+    Email: torres.michael36@gmail.com<br/>
+    Contact: +639493923708<br/>
+    Country: Philippines</p>
+  </div>
+  <div class="navBar">
+    <div id="Profile" class="Profile Breathing float-left" onclick="OpenCallCard()">
+      Torres
+    </div>
+    <div id="Burger" class="Burger float-right" onclick="OpensideMenu()">☰
+    </div>
+    <div class="row">
+      <div id="navMenu" class="container navMenu">
+        <nav class="row">
+          <div class="col-3" onclick="location.href='../Intro/Intro.html'">Intro</div>
+          <div class="col-2" onclick="location.href='../Skills/Skills.html'">Skills</div>
+          <div class="col-4" onclick="location.href='../Background/Background.html'">Background</div>
+          <div class="col-3" style="color: #ffffff; font-weight: bolder;">Certificate</div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CertificatePage">
+  <div class="container">
+    <div class="Contenthead reveal active fade-right-scroll" style="background-color: rgba(0,0,0,0);">
+      <h1>Certificate</h1>
+      <h5 class="Fadein">
+        <ul>
+          <li>Bootstrap CSS</li>
+          <li>JavaScript</li>
+          <li>PHP Stack</li>
+        </ul>
+      </h5>
+      <h4 class="Directing"><span style="font-variant: small-caps; font-size: small;">Scroll</span><br/>▼</h4>
+    </div>
+    <div class="CertCard reveal fade-left-scroll">
+      <p>CSS, Bootstrap, JavaScript And PHP Stack Complete Course</p>
+      <div class="row CertCard_body">
+        <img src="1.jpg" alt="Cert1"/>
+        <div class="row link col-12">
+         <!-- <a href="https://ude.my/UC-a1c48038-82a7-4e66-aca2-9191215111a0"><br/>Certificate Link</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="CertCard reveal fade-right-scroll">
+      <p>React, Next.js and NodeJS: A Rapid Guide - Advanced</p>
+      <div class="CertCard_body">
+        <div class="row temporary"></div>
+      </div>
+    </div>
+    <div class="CertCard reveal fade-left-scroll">
+      <p>Python</p>
+      <div class="CertCard_body">
+        <div class="row temporary"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

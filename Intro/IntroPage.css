@@ -1,0 +1,35 @@
+.IntroPage {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    font-size: larger;
+}
+.IntroPage .container{
+    margin-top: 1%;
+}
+/* 1st Div */
+.IntroCard {
+    border: 1px solid #00d9ff;
+    background-color: rgba(0,0,0,0.8);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 3%;
+}
+/* 2nd Div */
+.IntroCard p{
+    border-bottom: 2px solid #00d9ff;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin: 2% 10% 2% 10%;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+.IntroCard_body{
+    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+}

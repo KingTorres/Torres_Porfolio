@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Torres (Portfolio)</title> 
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../css/bootstrap.min.js"></script>
+  <!-- MyStyleAndScript -->
+  <link rel="stylesheet" href="../css/Style.css">
+  <script src="../js/javascript.js"></script>
+  <!-- Adding Background Page -->
+  <link rel="stylesheet" href="SkillsPage.css">
+</head>
+<body>
+<div class="floater">
+  <div id="sideMenu" class="sideMenu float-right">
+    <div id="closeSideMenu" class="closeSideMenu" onclick="closeSideMenu()">
+      ✕
+    </div>
+    <div onclick="location.href='../Intro/Intro.html'">Intro</div>
+    <div style="color: #ffffff; font-weight: bold;">Skills</div>
+    <div onclick="location.href='../Background/Background.html'">Background</div>
+    <div onclick="location.href='../Certificate/Certificate.html'">Certificate</div>
+  </div>
+  <div id="CallCard" class="CallCard float-left">
+    <div class="closeCallCard float-right" onclick="closeCallCard()">✕</div>
+    <img class="Prof_Pic" src="../images/profile.jpg" alt="Profile">
+    <p><b>Michael Torres</b><br/>
+    Email: torres.michael36@gmail.com<br/>
+    Contact: +639493923708<br/>
+    Country: Philippines</p>
+  </div>
+  <div class="navBar">
+    <div id="Profile" class="Profile Breathing float-left" onclick="OpenCallCard()">
+      Torres
+    </div>
+    <div id="Burger" class="Burger float-right" onclick="OpensideMenu()">☰
+    </div>
+    <div class="row">
+      <div id="navMenu" class="container navMenu">
+        <nav class="row">
+          <div class="col-3" onclick="location.href='../Intro/Intro.html'">Intro</div>
+          <div class="col-2" style="color: #ffffff; font-weight: bolder;">Skills</div>
+          <div class="col-4" onclick="location.href='../Background/Background.html'">Background</div>
+          <div class="col-3" onclick="location.href='../Certificate/Certificate.html'">Certificate</div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="SkillsPage">
+  <div class="container">
+    <div class="Contenthead reveal active fade-right-scroll" style="background-color: rgba(0,0,0,0);">
+      <h1>Skills</h1>
+      <h5 class="Fadein">
+        <ul>
+          <li>Web Development</li>
+          <li>Graphic Arts</li>
+          <li>Data Conversion</li>
+        </ul>
+      </h5>
+      <h4 class="Directing"><span style="font-variant: small-caps; font-size: small;">Scroll</span><br/>▼</h4>
+    </div>
+    <div class="SkillCard reveal fade-left-scroll">
+      <p>Web Development</p>
+      <div class="row Skill_body">
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img src="../images/bs.png"><br/>Bootstrap</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img src="../images/php.png"><br/>PHP</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img src="../images/mysql.png"><br/>MySql</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img src="../images/js.png"><br/>Javascript</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img src="../images/html.png"><br/>HTML5</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img src="../images/css.png"><br/>CSS3</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img src="../images/vscode.png"><br/>VSCode</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img src="../images/github.png"><br/>Github</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img src="../images/jquery.png"><br/>Jquery</div>
+      </div>
+    </div>
+    <div class="SkillCard reveal fade-right-scroll">
+      <p>Graphic Arts</p>
+      <div class="row Skill_body">
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/ps.png"><br/>Photoshop</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/ai.png"><br/>Illustrator</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/id.png"><br/>Indesign</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/inf.png"><br/>Infographics</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/typ.png"><br/>Typography</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/lay.png"><br/>Layout</div>
+      </div>
+    </div>
+    <div class="SkillCard reveal fade-left-scroll">
+      <p>Data Conversion</p>
+      <div class="row Skill_body">
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/xml.png"><br/>XML</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/ms.png"><br/>MS.Office</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/mc.png"><br/>Macros</div>
+        <div class="Skill_icon col-lg-2 col-md-3 col-sm-3 col-4"><img id="icon" src="../images/reg.png"><br/>Regex</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

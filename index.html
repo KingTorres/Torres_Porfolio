@@ -4,211 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael Torres (Portfolio)</title> 
-  <link rel="stylesheet" href="css/Style.css">
-  <script src="js/javascript.js"></script>
   <!--Bootstrap-->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/jquery.min.js"></script>
   <script src="css/bootstrap.min.js"></script>
-  <div class="navBar" style="cursor: pointer;"><!--Naviation Bar-->
-    <div class="container">
-      <ul id="formHeader" class="breadcrumb" style="display: block;">
-        <li><a id="nav1" class="navtext" style="font-size: medium; font-weight: bold; color: #ffffff;" onclick="content1('1')">Intro</a></li>
-        <li><a id="nav2" class="navtext" onclick="content1('2')">Skills</a></li>
-        <li><a id="nav3" class="navtext" onclick="content1('3')">Background</a></li>
-        <div id="TorresLabel" class="pull-right"><a onclick="kmbt('1')"><span class="badge mtlabel">Torres</span></a></div>
-      </ul>
-      <div id="navopen" class="navbar_hover" onclick="nav_hover('1')" style="display: none;">︾</div>
-      <div id="navclose" class="navbar_hover" onclick="nav_hover('2')" style="display: block;">︽</div>
-      <div id="mt" class="CallCard pull-right" style="display: none;">
-        <ul class="list-inline">
-          <li class="pull-left"><img class="picture" src="images/profile.jpg" alt="profile"></li>
-          <li class="pull-right" style="position: relative;">
-            <a class="cardName">Michael Torres</a><a class="pull-right" style="color: #ff4141; text-decoration: none;" onclick="kmbt('2')">X</a><br/>
-            Email: torres.michael36@gmail.com<br/>
-            Contact: +639493923708<br/>
-            Country: Philippines
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <!-- Adding Page -->
+  <link rel="stylesheet" href="index.css">
+  <script src="javascript.js"></script>
 </head>
-<body style="background-color: #4d4d4d;" onload="Intro('2')">
-<div id="bodyDiv" class="container" style="display: none;">
-  <div id="div1" class="topMargin" style="display: block;"><!--Intro-->
-    <div id="intro1" class="">
-      <p  style="font-size: 25px; color: #aaa9a9;">Hi, my name is</p>
-      <p style="font-size: 50px;">Michael Torres</p>
-      <p  style="font-size: 25px; color: #aaa9a9;">and I</p>
-    </div>
-    <div id="intro2" class="" style="display: none;">
-    Design, Develop and Innovate
-    </div>
-    <div id="intro3" class="" style="display: none;">
-    <p style="font-size: 20px; color: #aaa9a9;">with</p>
-    Problem Solving Skills,
-    </div>
-    <div id="intro4" class="" style="display: none;">
-    Continuous Learning
-    </div>
-    <div id="intro5" class="" style="display: none;">
-    <p style="font-size: 20px; color: #aaa9a9;">and</p>
-    Versatility
-    </div>
-    <div id="IntroLabel" class="TabLabel center-block" style="display: none;">Intro</div>
-    <div id="intro6" class="row">
-      <div class="col-lg-6 col-md-6 col-sm-4">
-        <div class="skill_content">
-          <p class="skill_head center-block" style="background-color: #000000;">Design, Develop and Innovate</p>
-          <div class="row skill_body center-block" style="text-align: justify; padding: 10px;">
-            Crafting beautiful and functional web applications design is my passion. As a Web Designer, I bring together my skills in Web Design and Graphic-Arts development to create seamless user experiences.
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-4">
-        <div class="skill_content">
-          <p class="skill_head center-block" style="background-color: #000000;">Problem Solving Skills</p>
-          <div class="row skill_body center-block" style="text-align: justify; padding: 10px;">
-            I analyze complex problems and optimize the system with my deep understanding of both Web Design and Graphic-Arts.<br/><br/>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-4">
-        <div class="skill_content">
-          <p class="skill_head center-block" style="background-color: #000000;">Continuous Learning</p>
-          <div class="row skill_body center-block" style="text-align: justify; padding: 10px;">
-            I stay up-to-date with new technologies and trends, learning from others and sharing knowledge with the development community.<br/><br/>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-4">
-        <div class="skill_content">
-          <p class="skill_head center-block" style="background-color: #000000;">Versatility</p>
-          <div class="row skill_body center-block" style="text-align: justify; padding: 10px;">
-            With a diverse skillset in both Web Design and Graphic-Arts development, I'm able to tackle various tasks and technologies, making me a valuable asset to any team.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="footer">Created by: Michael Torres | VScode<br/>Tools: VScode, Bootstrap, Javascript, HTML5, CSS3, Jquery, Photoshop.</div>
+<body onload="Intro()" style="background: black;">
+<div id="Entrance" style="display: none;">
+  <div id="intro1" class="container center-block Intro fadein">
+    <p  style="font-size: 25px; color: #aaa9a9;">Hi, my name is</p>
+    <p style="font-size: 50px;">Michael Torres</p>
+    <p  style="font-size: 25px; color: #aaa9a9;">and I</p>
   </div>
-  <div id="div2" style="display: none;"><!--Skills-->
-    <div class="TabLabel center-block">Skills</div>
-    <div class="row">
-      <div id="skill_1" class="col-lg-4 col-md-4 col-sm-4 fadein">
-        <div class="skill_content">
-          <p class="skill_head gradientAnimation1 center-block">Web Development</p>
-          <div class="row skill_body center-block">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/bs.png"><br/>Bootstrap</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/php.png"><br/>PHP</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/mysql.png"><br/>MySql</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/js.png"><br/>Javascript</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/html.png"><br/>HTML5</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/css.png"><br/>CSS3</span></div>
-          </div>
-        </div>
-      </div>
-      <div id="skill_2" class="col-lg-4 col-md-4 col-sm-4 fadein">
-        <div class="skill_content">
-          <p class="skill_head gradientAnimation1 center-block">Graphic Arts</p>
-          <div class="row skill_body center-block">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/ps.png"><br/>Photoshop</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/ai.png"><br/>Illustrator</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/id.png"><br/>Indesign</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/inf.png"><br/>Infographics</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/typ.png"><br/>Typography</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/lay.png"><br/>Layout</span></div>
-          </div>
-        </div>
-      </div>
-      <div id="skill_3" class="col-lg-4 col-md-4 col-sm-4 fadein">
-        <div class="skill_content">
-          <p class="skill_head gradientAnimation1 center-block">Data Conversion</p>
-          <div class="row skill_body center-block">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/xml.png"><br/>XML</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/ms.png"><br/>MS.Office</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/mc.png"><br/>Macros</span></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 skill_item"><span class="badge Label_BnW"><img id="icon" src="images/reg.png"><br/>Regex</span></div>
-          </div>
-        </div>
-      </div>
+  <div id="intro2" class="container center-block Intro fadein" style="display: none;">
+  Design, Develop and Innovate
+  </div>
+  <div id="intro3" class="container center-block Intro fadein" style="display: none;">
+  <p style="font-size: 20px; color: #aaa9a9;">with</p>
+  Problem Solving Skills,
+  </div>
+  <div id="intro4" class="container center-block Intro fadein" style="display: none;">
+  Continuous Learning
+  </div>
+  <div id="intro5" class="container center-block Intro fadein" style="display: none;">
+  <p style="font-size: 20px; color: #aaa9a9;">and</p>
+  Versatility
+  </div>
+</div>
+<div id="cyberArea" class="container-fluid">
+  <div class="cyberArea row flex">
+    <span id="E1" class="subtext Stamp col-12" style="display: none;">Welcome<br/>
+    <span id="E2" class="smalltext fadein" style="display: none;">to my<br/></span>
+    <span id="E3" class="Digital fadein" style="display: none;">Digital Profile</span>
+    </span>
+    <div id="toWebsite" class="toWebsite" style="display: none;">
+      <p id="Enter" class="Stamp" onclick="Entering()">Proceed</p>
     </div>
   </div>
-  <div id="div3" class="fadein topMargin" style="display: none;"><!--Background-->
-    <div class="TabLabel center-block">Background</div>
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6">
-          <div id="Background_1" class="fadein"><!--1st cell in 1st row-->
-            <div class="skill_content">
-              <p class="skill_head gradientAnimation1 center-block">Circle Graphics Inc.</p>
-              <div class="row skill_body center-block">
-                  <div class="Background_Item">
-                    <div class="Background_Position"><span style="color: #aaa9a9;">(Oct. 2019 - Present)</span><br/>Data Conversion Specialist</div>
-                    <ul class="Background_works">
-                      <li>Assess and Convert Document into Textfile(.txt) Script to run in Indesign(Layout Team).</li>
-                      <li>Convert Manuscript into MSWord Documents.</li>
-                      <li>Create and Performing Macros.</li>
-                      <li>XML Conversion.</li>
-                      <li>E-Book & ePub Conversion.</li>
-                    </ul>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div id="Background_3" class="fadein">
-            <div class="skill_content">
-              <p class="skill_head gradientAnimation1 center-block">Sunlife Financial Philippines</p>
-              <div class="row skill_body center-block">
-                  <div class="Background_Item">
-                    <div class="Background_Position"><span style="color: #aaa9a9;">(2016)</span><br/>I.T. Support Assistant</div>
-                    <ul class="Background_works">
-                      <li>Re-Image Desktop and Laptop via network.</li>
-                      <li>Assist advisor for their software installation.</li>
-                      <li>Re-installation, Un-installation.</li>
-                      <li>Repair, Upgrade Request.</li>
-                      <li>Re-inventory.</li>
-                      <li>hp ticketing.</li>
-                      <li>Troubleshooting.</li>
-                      <li>Wipe HDD.</li>
-                      <li>Remote Desktop.</li>                   
-                    </ul>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="Background_2" class="col-lg-6 col-md-6 col-sm-6 fadein"><!--2nd cell in 1st row-->
-          <div class="skill_content">
-            <p class="skill_head gradientAnimation1 center-block">Asiatype Inc.</p>
-            <div class="row skill_body center-block">
-                <div class="Background_Item">
-                  <p class="Background_Position"><span style="color: #aaa9a9;">(Feb. 2018 - Oct. 2019)</span><br/>Graphic Artist</p>
-                  <ul class="Background_works">
-                    <li>Attends orientation meetings to discuss and understand project requirements.</li>
-                    <li>Locates or receives an electronic file containing source material; maintains file integrity and security.</li>
-                    <li>May handle printed material as the source of images.</li>
-                    <li>Uses the required illustration or layout software to process an image.</li>
-                    <li>Works with Quality staff members to ensure that materials conform to accepted rules of style and format.</li>
-                    <li>Carries out proofreading corrections and author's amendments as required.</li>
-                    <li>Creates final format of materials for sending to clients as required by the project guidelines.</li>
-                    <li>Documents tasks and time spent in Time Report Daily, and also issues and process improvements for management use.</li>
-                  </ul>
-                  <p class="Background_Position"><span style="color: #aaa9a9;">(Jan. 2017 - Feb. 2018)</span><br/>Document Analyst</p>
-                  <ul class="Background_works">
-                    <li>Assess and Convert document into XML format using Word Styling Process in Conformance to Client's DTD.</li>
-                    <li>Check the Output by using the Rendering Tool provided by Client.</li>
-                    <li>Perform Word-styling</li>
-                    <li>Image creation</li>
-                    <li>Equation creation Processes.</li>
-                    <li>Assess the document, determine its complexity and prepare it's word-styling process.<br/></li>
-                  </ul>
-                </div>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
+</div>
+<div id="Enlarge" class="Enlarge" style="display: none;">
+  <div id="Enlarging" class="EnlargeItem Enlarging"></div>
 </div>
 </body>
 </html>

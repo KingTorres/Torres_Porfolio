@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Torres (Portfolio)</title> 
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../css/bootstrap.min.js"></script>
+  <!-- MyStyleAndScript -->
+  <link rel="stylesheet" href="../css/Style.css">
+  <script src="../js/javascript.js"></script>
+  <!-- Adding Background Page -->
+  <link rel="stylesheet" href="BackgroundPage.css">
+</head>
+<body>
+<div class="floater">
+  <div id="sideMenu" class="sideMenu float-right">
+    <div id="closeSideMenu" class="closeSideMenu" onclick="closeSideMenu()">
+      ✕
+    </div>
+    <div onclick="location.href='../Intro/Intro.html'">Intro</div>
+    <div onclick="location.href='../Skills/Skills.html'">Skills</div>
+    <div style="color: #ffffff; font-weight: bold;">Background</div>
+    <div onclick="location.href='../Certificate/Certificate.html'">Certificate</div>
+  </div>
+  <div id="CallCard" class="CallCard float-left">
+    <div class="closeCallCard float-right" onclick="closeCallCard()">✕</div>
+    <img class="Prof_Pic" src="../images/profile.jpg" alt="Profile">
+    <p><b>Michael Torres</b><br/>
+    Email: torres.michael36@gmail.com<br/>
+    Contact: +639493923708<br/>
+    Country: Philippines</p>
+  </div>
+  <div class="navBar">
+    <div id="Profile" class="Profile Breathing float-left" onclick="OpenCallCard()">
+      Torres
+    </div>
+    <div id="Burger" class="Burger float-right" onclick="OpensideMenu()">☰
+    </div>
+    <div class="row">
+      <div id="navMenu" class="container navMenu">
+        <nav class="row">
+          <div class="col-3" onclick="location.href='../Intro/Intro.html'">Intro</div>
+          <div class="col-2" onclick="location.href='../Skills/Skills.html'">Skills</div>
+          <div class="col-4" style="color: #ffffff; font-weight: bold;">Background</div>
+          <div class="col-3" onclick="location.href='../Certificate/Certificate.html'">Certificate</div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="BackgroundPage">
+  <div class="container">
+    <div class="Contenthead reveal active fade-right-scroll" style="background-color: rgba(0,0,0,0);">
+      <h1>Company Background</h1>
+      <h5 class="Fadein">
+        <ul>
+          <li>Circle Graphics Inc.</li>
+          <li>Asiatype Inc.</li>
+          <li>Sunlife Financial Philippines</li>
+        </ul>
+      </h5>
+      <h4 class="Directing"><span style="font-variant: small-caps; font-size: small;">Scroll</span><br/>▼</h4>
+    </div>
+    <div class="CompanyCard reveal fade-left-scroll">
+      <p>Circle Graphics Inc.</p>
+      <div><span style="color: #aaa9a9;">(Oct. 2019 - Present)</span><br/>Data Conversion Specialist</div>
+      <ul>
+        <li>Assess and Convert Document into Textfile(.txt) Script to run in Indesign(Layout Team).</li>
+        <li>Convert Manuscript into MSWord Documents.</li>
+        <li>Create and Performing Macros.</li>
+        <li>XML Conversion.</li>
+        <li>E-Book & ePub Conversion.</li>
+      </ul>
+    </div>
+    <div class="CompanyCard reveal fade-right-scroll">
+      <p>Asiatype Inc.</p>
+      <div><span style="color: #aaa9a9;">(Feb. 2018 - Oct. 2019)</span><br/>Graphic Artist</div>
+      <ul class="Background_works">
+        <li>Attends orientation meetings to discuss and understand project requirements.</li>
+        <li>Locates or receives an electronic file containing source material; maintains file integrity and security.</li>
+        <li>May handle printed material as the source of images.</li>
+        <li>Uses the required illustration or layout software to process an image.</li>
+        <li>Works with Quality staff members to ensure that materials conform to accepted rules of style and format.</li>
+        <li>Carries out proofreading corrections and author's amendments as required.</li>
+        <li>Creates final format of materials for sending to clients as required by the project guidelines.</li>
+        <li>Documents tasks and time spent in Time Report Daily, and also issues and process improvements for management use.</li>
+      </ul>
+      <div><span style="color: #aaa9a9;">(Jan. 2017 - Feb. 2018)</span><br/>Document Analyst</div>
+      <ul class="Background_works">
+        <li>Assess and Convert document into XML format using Word Styling Process in Conformance to Client's DTD.</li>
+        <li>Check the Output by using the Rendering Tool provided by Client.</li>
+        <li>Perform Word-styling</li>
+        <li>Image creation</li>
+        <li>Equation creation Processes.</li>
+        <li>Assess the document, determine its complexity and prepare it's word-styling process.<br/></li>
+      </ul>
+    </div>
+    <div class="CompanyCard reveal fade-left-scroll">
+      <p>Sunlife Financial Philippines</p>
+      <div><span style="color: #aaa9a9;">(2016)</span><br/>I.T. Support Assistant</div>
+      <ul>
+        <li>Re-Image Desktop and Laptop via network.</li>
+        <li>Assist advisor for their software installation.</li>
+        <li>Re-installation, Un-installation.</li>
+        <li>Repair, Upgrade Request.</li>
+        <li>Re-inventory.</li>
+        <li>hp ticketing.</li>
+        <li>Troubleshooting.</li>
+        <li>Wipe HDD.</li>
+        <li>Remote Desktop.</li>                   
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
