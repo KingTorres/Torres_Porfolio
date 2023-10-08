@@ -34,8 +34,8 @@
     display: inline-block;
     border-radius: 3%;
     margin: 2%;
-    max-width: 70%;
-    max-height: 70%;
+    object-fit: cover;
+    width: 80%;
 }
 .CertCard_body .link{
     justify-content: center;
