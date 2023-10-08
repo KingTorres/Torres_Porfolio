@@ -168,8 +168,9 @@ html{
   position: absolute;
   top: 40px;
   padding: 5px;
-  width: 420px;
+  width: 350px;
   color: #ffffff;
+  font-size: small;
 }
 .Prof_Pic{
   float: left;
