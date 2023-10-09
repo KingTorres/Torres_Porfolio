@@ -34,10 +34,10 @@ async function Welcome(){
     await sleepNow(2000)
     document.getElementById('E3').style.display = "block";
     await sleepNow(3000)
-    document.getElementById('E3').setAttribute("class","Digital vibrate")
-    document.getElementById('toWebsite').style.display = "inline-flex";
-    await sleepNow(800)
-    document.getElementById('Enter').setAttribute("class","gradientAnimation1")
+    document.getElementById('E3').setAttribute("class","Digital vibrate col-12")
+    document.getElementById('toWebsite').style.display = "block";
+    await sleepNow(1500)
+    document.getElementById('Enter').setAttribute("class","Button gradientAnimation1")
 }
 async function Entering(){
     document.getElementById('cyberArea').style.display = "none";
