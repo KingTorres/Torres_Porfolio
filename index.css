@@ -221,9 +221,8 @@
     border-radius: 50%;
     background: #000000;
 }
-
 .Enlarging {
-    background: url('../images/bg.jpg');
+    background: url('images/bg.jpg');
     background-size: auto; /*Adjusting for height width animation*/
     background-position: center center;
     background-repeat: no-repeat;
