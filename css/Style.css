@@ -255,6 +255,11 @@ body{
   -o-animation: Directing 2s infinite;
   -ms-animation: Directing 2s infinite;
 }
+.Directing span{
+  font-variant: small-caps;
+  font-size: small;
+  vertical-align: middle;
+}
 @keyframes Directing {
   0% {transform: translateY(-20px);}
   50% {transform: translateY(0px);}
