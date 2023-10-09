@@ -20,10 +20,10 @@
     <div id="closeSideMenu" class="closeSideMenu" onclick="closeSideMenu()">
       ✕
     </div>
-    <div onclick="location.href='../Intro/Intro.html'">Intro</div>
+    <div onclick="PageEntering('Intro')">Intro</div>
     <div style="color: #ffffff; font-weight: bold;">Skills</div>
-    <div onclick="location.href='../Background/Background.html'">Background</div>
-    <div onclick="location.href='../Certificate/Certificate.html'">Certificate</div>
+    <div onclick="PageEntering('Background')">Background</div>
+    <div onclick="PageEntering('Certificate')">Certificate</div>
   </div>
   <div id="CallCard" class="CallCard float-left">
     <div class="closeCallCard float-right" onclick="closeCallCard()">✕</div>
@@ -42,16 +42,16 @@
     <div class="row">
       <div id="navMenu" class="container navMenu">
         <nav class="row">
-          <div class="col-3" onclick="location.href='../Intro/Intro.html'">Intro</div>
+          <div class="col-3" onclick="PageEntering('Intro')">Intro</div>
           <div class="col-2" style="color: #ffffff; font-weight: bolder;">Skills</div>
-          <div class="col-4" onclick="location.href='../Background/Background.html'">Background</div>
-          <div class="col-3" onclick="location.href='../Certificate/Certificate.html'">Certificate</div>
+          <div class="col-4" onclick="PageEntering('Background')">Background</div>
+          <div class="col-3" onclick="PageEntering('Certificate')">Certificate</div>
         </nav>
       </div>
     </div>
   </div>
 </div>
-<div class="SkillsPage">
+<div id="Content" class="SkillsPage">
   <div class="container">
     <div class="Contenthead reveal active fade-bottom-scroll" style="background-color: rgba(0,0,0,0);">
       <h1>Skills</h1>
@@ -100,6 +100,9 @@
     </div>
   </div>
 <footer>Michael Torres | Email: torres.michael36@gmail.com</footer>
+</div>
+<div id="PageEntering" class="EnlargePage" style="display: none;">
+  <div id="Enlarging" class="EnlargeAction Enlarging"></div>
 </div>
 </body>
 </html>

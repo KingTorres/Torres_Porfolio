@@ -1,4 +1,4 @@
-html{
+body{
   background: url('../images/bg.jpg');
   background-attachment: fixed; /*important*/
   background-size: cover;
@@ -419,4 +419,47 @@ footer {
   padding-bottom: 3px;
   padding-left: 2px;
   background: #242424;
+}
+
+/* Entering Page */
+.EnlargePage {
+  z-index: 1;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.EnlargeAction {
+  border: 2px solid #00d9ff;
+  border-radius: 50%;
+  background: #000000;
+}
+
+.Enlarging {
+  background-image: url('../images/bg.jpg');
+  background-attachment: fixed; /*important*/
+  background-size: cover;
+  background-position: center center;
+  animation: Enlarging 1.5s;
+  -webkit-animation: Enlarging 1.5s;
+  -moz-animation: Enlarging 1.5s;
+  -o-animation: Enlarging 1.5s;
+  -ms-animation: Enlarging 1.5s;
+}
+@keyframes Enlarging {
+  0% { height: 0%; width: 0%; }
+  100% { height: 200%; width: 200%; border-radius: 0%; border: 2px solid black;}
+}
+@media (max-width: 601px)
+{
+  .cyberArea {
+    font-size: 30px;
+  }
+  .smalltext {
+    font-size: 20px;
+  }
+  .Digital {
+    font-size: 30px;
+  }
 }

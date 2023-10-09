@@ -13,6 +13,30 @@ function closeCallCard(){
     document.getElementById('CallCard').style.display = "none";
 }
 
+const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
+async function PageEntering(Page){
+  document.getElementById('Content').style.display = "none";
+  closeSideMenu()
+  document.getElementById('PageEntering').style.display = "flex";
+  await sleepNow(400)
+  switch (Page)
+    {
+        case 'Intro':
+            window.location.href = "../Intro/Intro.html";
+            break;
+        case 'Skills':
+            window.location.href = "../Skills/Skills.html";
+            break;
+        case 'Background':
+            window.location.href = "../Background/Background.html";
+            break;
+        case 'Certificate':
+            window.location.href = "../Certificate/Certificate.html";
+            break;
+        default:
+            break;
+    }
+}
 // Revealing Item when in scrolled
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
