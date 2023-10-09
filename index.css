@@ -74,9 +74,9 @@
     text-align: center;
 }
 .Digital {
-    font-size: 60px;
+    font-size: 40px;
     color: #00d9ff;
-    font-weight: bold;
+    font-weight: bolder;
     font-variant: small-caps;
     text-align: center;
     margin-top: 2%;
@@ -231,6 +231,6 @@
       font-size: 20px;
     }
     .Digital {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
