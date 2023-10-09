@@ -447,10 +447,14 @@ footer {
 }
 
 .Enlarging {
-  background-image: url('../images/bg.jpg');
-  background-attachment: fixed; /*important*/
-  background-size: cover;
+  background: url('../images/bg.jpg');
+  background-size: auto; /*Adjusting for height width animation*/
   background-position: center center;
+  background-repeat: no-repeat;
+  /* fixed */
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
   animation: Enlarging 1.5s;
   -webkit-animation: Enlarging 1.5s;
   -moz-animation: Enlarging 1.5s;
