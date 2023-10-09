@@ -143,20 +143,36 @@
     
   }
   @-moz-keyframes vibrate {
-    0% { font-size: 30vw;}
-    100% { font-size: 40px;}
+    0% { transform: translate(10px, 5px); }
+    20% { transform: translate(0px, -10px); }
+    40% { transform: translate(-10px, 5px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(-2px, 10px); }
+    100% { transform: translate(10px, 5px); }
   }
   @-webkit-keyframes vibrate {
-    0% { font-size: 30vw;}
-    100% { font-size: 40px;}
+    0% { transform: translate(10px, 5px); }
+    20% { transform: translate(0px, -10px); }
+    40% { transform: translate(-10px, 5px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(-2px, 10px); }
+    100% { transform: translate(10px, 5px); }
   }
   @-o-keyframes vibrate {
-    0% { font-size: 30vw;}
-    100% { font-size: 40px;}
+    0% { transform: translate(10px, 5px); }
+    20% { transform: translate(0px, -10px); }
+    40% { transform: translate(-10px, 5px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(-2px, 10px); }
+    100% { transform: translate(10px, 5px); }
   }
   @-ms-keyframes vibrate {
-    0% { font-size: 30vw;}
-    100% { font-size: 40px;}
+    0% { transform: translate(10px, 5px); }
+    20% { transform: translate(0px, -10px); }
+    40% { transform: translate(-10px, 5px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(-2px, 10px); }
+    100% { transform: translate(10px, 5px); }
   }
 
   .gradientAnimation1 {
