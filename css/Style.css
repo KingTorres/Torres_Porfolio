@@ -393,7 +393,7 @@ body{
 .Contenthead h5{
   border: 1px solid #00d9ff;
   background-color: rgba(0,0,0,0.3);
-  background: linear-gradient(180deg, rgba(0,0,0,0.3) 60%, rgba(0, 183, 255, 0.1));
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 55%, rgba(0, 183, 255, 0.1));
   margin: 5%;
   border-radius: 20px;
   text-align: center;
