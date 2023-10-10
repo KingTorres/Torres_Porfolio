@@ -433,20 +433,22 @@ footer {
 
 /* Entering Page */
 .EnlargePage {
-  position: fixed;
   z-index: 2;
   display: flex;
-  height: 100%;
-  width: 100%;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
 .EnlargeAction {
   background: url('../images/bg.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
 .Enlarging {
   animation: Enlarging 1s;
