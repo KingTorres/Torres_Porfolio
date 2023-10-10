@@ -79,3 +79,15 @@
         width: 660px;
     }
 }
+@media (max-width: 481px)
+{
+    .CertCard_body span{
+        font-size: x-small;
+    }
+}
+@media (max-width: 333px)
+{
+    .CertCard_body span{
+        font-size: xx-small;
+    }
+}
