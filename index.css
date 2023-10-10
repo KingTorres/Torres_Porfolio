@@ -217,27 +217,26 @@
     justify-content: center;
 }
 .EnlargeItem {
-    background: #000000;
+  background: url('images/bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
 }
 .Enlarging {
-    background: url('images/bg.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* fixed */
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    animation: Enlarging 1s;
-    -webkit-animation: Enlarging 1s;
-    -moz-animation: Enlarging 1s;
-    -o-animation: Enlarging 1s;
-    -ms-animation: Enlarging 1s;
+  animation: Enlarging 1s;
+  -webkit-animation: Enlarging 1s;
+  -moz-animation: Enlarging 1s;
+  -o-animation: Enlarging 1s;
+  -ms-animation: Enlarging 1s;
   }
   @keyframes Enlarging {
     0% { height: 0%; width: 0%; border-radius: 50%; border: 2px solid #00d9ff;}
-    100% { height: 100vh; width: 100vw; border: 2px solid black;}
+    100% { height: 100vh; width: 100vw; border: 2px solid #005d6d;}
   }
   @media (max-width: 601px)
   {

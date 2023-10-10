@@ -15,10 +15,9 @@ function closeCallCard(){
 
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
 async function PageEntering(Page){
-  document.getElementById('Content').style.display = "none";
   closeSideMenu()
   document.getElementById('PageEntering').style.display = "flex";
-  await sleepNow(600)
+  await sleepNow(400)
   switch (Page)
     {
         case 'Intro':
