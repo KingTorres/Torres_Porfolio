@@ -21,16 +21,16 @@ async function PageEntering(Page){
   switch (Page)
     {
         case 'Intro':
-            // window.location.href = "../Intro/Intro.html";
+            window.location.href = "../Intro/Intro.html";
             break;
         case 'Skills':
-            // window.location.href = "../Skills/Skills.html";
+            window.location.href = "../Skills/Skills.html";
             break;
         case 'Background':
-            // window.location.href = "../Background/Background.html";
+            window.location.href = "../Background/Background.html";
             break;
         case 'Certificate':
-            // window.location.href = "../Certificate/Certificate.html";
+            window.location.href = "../Certificate/Certificate.html";
             break;
         default:
             break;
