@@ -18,7 +18,7 @@ async function PageEntering(Page){
   document.getElementById('Content').style.display = "none";
   closeSideMenu()
   document.getElementById('PageEntering').style.display = "flex";
-  await sleepNow(600)
+  await sleepNow(800)
   switch (Page)
     {
         case 'Intro':

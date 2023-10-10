@@ -44,6 +44,6 @@ async function Entering(){
     document.getElementById('Entrance').style.display = "none";
     await sleepNow(50)
     document.getElementById('Enlarge').style.display = "flex";
-    await sleepNow(900)
+    await sleepNow(800)
     window.location.href = "Intro/Intro.html";
 }
