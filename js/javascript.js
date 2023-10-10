@@ -1,4 +1,5 @@
 function OpensideMenu(){
+    document.getElementById('sideMenu').style.display = "block";
     document.getElementById('sideMenu').setAttribute("class","sideMenu slideIn");
     closeCallCard()
 }
