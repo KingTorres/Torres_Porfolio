@@ -389,20 +389,14 @@
   text-shadow: 5px 2px 2px #000000;
 }
 .Contenthead h5{
-  border: 1px solid #00d9ff;
+  border-bottom: 1px solid #00d9ff;
   background-color: rgba(0,0,0,0.3);
-  background: linear-gradient(180deg, rgba(0,0,0,0.3) 55%, rgba(0, 183, 255, 0.1));
+  background: linear-gradient(180deg, rgba(0,0,0,0.0) 55%, rgba(55, 0, 255, 0.1));
   margin: 5%;
   border-radius: 20px;
   text-align: center;
   padding: 4%;
-}
-.Contenthead h5 ul{
-  list-style-type: none;
-  padding: 3%;
-}
-.Contenthead h5 ul li {
-  padding-bottom: 3%;
+  text-shadow: 2px 2px #000000;
 }
 
 footer {
@@ -478,17 +472,7 @@ footer {
   z-index: 2;
 }
 /* All media */
-@media (max-width: 800px)
-{
-    .Contenthead h5 ul{
-        padding-top: 15%;
-        padding-bottom: 15%;
-    }
-    .Contenthead h5 ul li{
-        padding-bottom: 5%;
-    }
-}
-@media (max-width: 600px)
+@media (max-width: 600px) /*high value first*/
 {
     #navMenu{
         display: none;
@@ -532,9 +516,47 @@ footer {
   }
 }
 /* Min */
-@media (min-width: 600px)
+@media (min-width: 800px)
 {
     .sideMenu{
       display: none !important;
     }
+}
+@media (min-width: 520px) /*small value first*/
+{
+  .Contenthead h1{
+    margin-top: -3%;
+  }
+  .Contenthead h5{
+    margin: 6% 16% 0% 16%;
+  }
+  .Contenthead h4{
+    margin: 5% 0% 0% 0%;
+  }
+}
+@media (min-width: 535px) /*small value first*/
+{
+  .Contenthead h1{
+    margin-top: -1%;
+  }
+  .Contenthead h5{
+    margin: 1% 17% 0% 17%;
+    padding: 6% 0% 2% 0%;
+  }
+  .Contenthead h4{
+    margin: 5% 0% 0% 0%;
+  }
+}
+@media (min-width: 992px)
+{
+  .Contenthead h1{
+    margin-top: -1%;
+  }
+  .Contenthead h5{
+    margin: 0% 30% 1% 30%;
+    padding: 3% 0% 1% 0%;
+  }
+  .Contenthead h4{
+    margin: 3% 0% 0% 0%;
+  }
 }
