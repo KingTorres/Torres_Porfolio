@@ -54,21 +54,6 @@
   cursor: pointer;
   z-index: 1;
 }
-@media (max-width: 600px)
-{
-    #navMenu{
-        display: none;
-    }
-    #Burger{
-        display: block;
-    }
-}
-@media (min-width: 600px)
-{
-    .sideMenu{
-      display: none !important;
-    }
-}
 /* Cards and SideBar */
 
 .sideMenu{
@@ -411,16 +396,6 @@
   padding-bottom: 3%;
 }
 
-@media (max-width: 800px)
-{
-    .Contenthead h5 ul{
-        padding-top: 15%;
-        padding-bottom: 15%;
-    }
-    .Contenthead h5 ul li{
-        padding-bottom: 5%;
-    }
-}
 footer {
   bottom: 0px;
   color: #8a8a8a;
@@ -433,7 +408,7 @@ footer {
 
 /* Entering Page */
 .EnlargePage {
-  z-index: 2;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -462,19 +437,78 @@ footer {
   100% { height: 100vh; width: 100vw; border: 2px solid #005d6d;}
 }
 
-@media (max-width: 601px)
+.Section {
+  top: 3px;
+  position: fixed;
+  display: none;
+  color: #00d9ff;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  font-variant: small-caps;
+  justify-content: center;
+  padding: 0px 10px 0px 10px;
+  z-index: 2;
+}
+/* All media */
+@media (max-width: 800px)
 {
-  .cyberArea {
-    font-size: 30px;
+    .Contenthead h5 ul{
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .Contenthead h5 ul li{
+        padding-bottom: 5%;
+    }
+}
+@media (max-width: 600px)
+{
+    #navMenu{
+        display: none;
+    }
+    #Burger{
+        display: block;
+    }
+    .cyberArea {
+      font-size: 30px;
+    }
+    .smalltext {
+      font-size: 20px;
+    }
+    .Digital {
+      font-size: 30px;
+    }
+    footer {
+      font-size: 15px;
+      padding-left: 12px;
+    }
+    .Section {
+      display: flex;
+      margin-left: 15%;
+      width: 70%;
+    }
+}
+@media (max-width: 500px)
+{
+  .Section {
+    display: flex;
+    margin-left: 18%;
+    width: 65%;
   }
-  .smalltext {
-    font-size: 20px;
+}
+@media (max-width: 375px)
+{
+  .Section {
+    display: flex;
+    margin-left: 23%;
+    width: 58%;
   }
-  .Digital {
-    font-size: 30px;
-  }
-  footer {
-    font-size: 15px;
-    padding-left: 12px;
-  }
+}
+/* Min */
+@media (min-width: 600px)
+{
+    .sideMenu{
+      display: none !important;
+    }
 }
