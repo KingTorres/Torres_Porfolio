@@ -17,7 +17,7 @@ const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) /
 async function PageEntering(Page){
   closeSideMenu()
   document.getElementById('PageEntering').style.display = "flex";
-  await sleepNow(400)
+  await sleepNow(900)
   switch (Page)
     {
         case 'Intro':
