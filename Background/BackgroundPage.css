@@ -31,7 +31,13 @@
     font-weight: bold;
     margin: 5% 5% 1% 5%;
 }
+.CompanyCard div span{
+    font-variant: small-caps;
+    color: #8f8f8f;
+    font-size: medium;
+}
 .CompanyCard ul{
     list-style-type: circle;
     margin: 0% 5% 2% 5%;
+    color: #eeeeee;
 }
