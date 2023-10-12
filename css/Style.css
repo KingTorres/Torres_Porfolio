@@ -76,6 +76,7 @@
   height: 30px;
   top: 0px;
   margin: 0px 16% 20px 24%;
+  font-variant: small-caps;
 }
 .PageSection div{
   border-radius: 0px 0px 80px 80px;
@@ -426,6 +427,7 @@
   margin-bottom: 3%;
 }
 .Contenthead h1{
+  display: block;
   font-variant: small-caps;
   text-align: center;
   margin-bottom: 5px;
@@ -433,11 +435,12 @@
   color: #4c4d4e;
 }
 .Contenthead h5{
+  display: block;
   border-bottom: 1px solid #61677A ;
   background-color: rgba(0,0,0,0.3);
   background: linear-gradient(180deg, #27282900 55%, #27282901);
   margin: 5%;
-  color: #cccccc;
+  color: #ffffff;
   font-variant: small-caps;
   border-radius: 20px;
   text-align: center;
