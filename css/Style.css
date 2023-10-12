@@ -477,38 +477,6 @@ footer {
   height: 100%;
   width: 100%;
 }
-.Loading {
-  height: 5px;
-  border-radius: 3px;
-  background-color: #cccccc;
-  animation: Loading 0.5s infinite;
-  animation-delay: 2s;
-}
-@keyframes Loading {
-  0% { width: 0%; background-color: #cccccc;}
-  50% { width: 5%; background-color: #272829;}
-  100% { width: 0%; background-color: #cccccc;}
-}
-@-moz-keyframes Loading {
-  0% { width: 0%; background-color: #cccccc;}
-  50% { width: 5%; background-color: #272829;}
-  100% { width: 0%; background-color: #cccccc;}
-}
-@-webkit-keyframes Loading {
-  0% { width: 0%; background-color: #cccccc;}
-  50% { width: 5%; background-color: #272829;}
-  100% { width: 0%; background-color: #cccccc;}
-}
-@-o-keyframes Loading {
-  0% { width: 0%; background-color: #cccccc;}
-  50% { width: 5%; background-color: #272829;}
-  100% { width: 0%; background-color: #cccccc;}
-}
-@-ms-keyframes Loading {
-  0% { width: 0%; background-color: #cccccc;}
-  50% { width: 5%; background-color: #272829;}
-  100% { width: 0%; background-color: #cccccc;}
-}
 .Enlarging {
   border: 2px solid #61677A;
   animation: Enlarging 1s;
