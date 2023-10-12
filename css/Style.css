@@ -289,8 +289,7 @@
 
 .Directing {
   text-align: center;
-  text-shadow: 1px 2px #000000;
-  color: #9c9c9c;
+  color: #888888;
   animation: Directing 2s;
   -webkit-animation: Directing 2s infinite;
   -moz-animation: Directing 2s infinite;
@@ -432,7 +431,7 @@
   text-align: center;
   margin-bottom: 5px;
   margin-top: 2%;
-  color: #4c4d4e;
+  color: #888888;
 }
 .Contenthead h5{
   display: block;
