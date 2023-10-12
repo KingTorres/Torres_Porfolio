@@ -37,6 +37,7 @@
 }
 .Skill_icon {
     text-align: center;
+    font-size: x-small;
     background-color: rgba(112, 112, 112, 0.3);
     border-radius: 20px;
     font-variant: small-caps;
