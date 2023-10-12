@@ -9,7 +9,7 @@
 }
 /* 1st Div */
 .CertCard {
-    border: 1px solid #00d9ff;
+    border: 1px solid #61677A;
     background-color: rgba(0,0,0,0.7);
     color: #ffffff;
     padding: 15px;
@@ -18,7 +18,7 @@
 }
 /* 2nd Div */
 .CertCard p{
-    border-bottom: 2px solid #00d9ff;
+    border-bottom: 2px solid #61677A;
     background-color: rgba(0,0,0,0.3);
     border-radius: 10px;
     text-align: center;
@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 .CertCard_body span:hover{
-    color: #00d9ff;
+    color: #61677A;
 }
 .CertCard_body div.temporary{
     border-radius: 3%;

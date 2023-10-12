@@ -9,7 +9,7 @@
 }
 /* 1st Div */
 .IntroCard {
-    border: 1px solid #00d9ff;
+    border: 1px solid #61677A;
     background-color: rgba(0,0,0,0.7);
     color: #ffffff;
     padding: 15px;
@@ -18,7 +18,7 @@
 }
 /* 2nd Div */
 .IntroCard p{
-    border-bottom: 2px solid #00d9ff;
+    border-bottom: 2px solid #61677A;
     background-color: rgba(0,0,0,0.3);
     border-radius: 10px;
     text-align: center;
