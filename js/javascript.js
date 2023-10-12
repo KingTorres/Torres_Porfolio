@@ -59,7 +59,12 @@ function reveal() {
   
   $(document).ready(function(){
     if(window.innerWidth < 992){
-      $('.Skill_icon').addClass('col-3')
+      $('#Background_Container').removeClass('Background_Container')
+      $('#BackgroundItem2').removeClass('BackgroundItem2')
+      // Skills
+      $('#Skills_Container').removeClass('Skills_Container')
+      // Intro
+      $('#Intro_Container').removeClass('Intro_Container')
     }
     else{
         // Background
@@ -67,8 +72,27 @@ function reveal() {
       $('#BackgroundItem2').addClass('BackgroundItem2')
       // Skills
       $('#Skills_Container').addClass('Skills_Container')
-      $('.Skill_icon').addClass('col-3')
       // Intro
       $('#Intro_Container').addClass('Intro_Container')
     }
   });
+  $(window).on("resize", function(){
+    if(window.innerWidth < 992){
+      $('#Background_Container').removeClass('Background_Container')
+      $('#BackgroundItem2').removeClass('BackgroundItem2')
+      // Skills
+      $('#Skills_Container').removeClass('Skills_Container')
+      // Intro
+      $('#Intro_Container').removeClass('Intro_Container')
+    }
+    else{
+        // Background
+      $('#Background_Container').addClass('Background_Container')
+      $('#BackgroundItem2').addClass('BackgroundItem2')
+      // Skills
+      $('#Skills_Container').addClass('Skills_Container')
+      // Intro
+      $('#Intro_Container').addClass('Intro_Container')
+    }
+  });
+  
