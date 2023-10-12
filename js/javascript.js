@@ -56,6 +56,7 @@ function reveal() {
   
   $(document).ready(function(){
     if(window.innerWidth < 992){
+      $('.Skill_icon').addClass('col-3')
     }
     else{
         // Background
