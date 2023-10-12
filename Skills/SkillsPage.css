@@ -57,3 +57,9 @@
 .SkillItem1 {
     grid-row: span 2;
 }
+@media (min-width: 992px) {
+    .SkillCard img {
+        width: 30px;
+        height: 30px;
+    }
+}
