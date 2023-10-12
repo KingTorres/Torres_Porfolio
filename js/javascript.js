@@ -2,18 +2,21 @@ function OpensideMenu(){
     document.getElementById('sideMenu').style.display = "block";
     document.getElementById('sideMenu').setAttribute("class","sideMenu slideIn");
     closeCallCard()
+    document.getElementById('ContentBlocker').style.display = "flex";
 }
 function closeSideMenu(){
+    document.getElementById('ContentBlocker').style.display = "none";
     document.getElementById('sideMenu').setAttribute("class","sideMenu slideOut");
 }
 function OpenCallCard(){
     document.getElementById('CallCard').style.display = "block";
     closeSideMenu()
+    document.getElementById('ContentBlocker').style.display = "flex";
 }
 function closeCallCard(){
     document.getElementById('CallCard').style.display = "none";
+    document.getElementById('ContentBlocker').style.display = "none";
 }
-
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
 async function PageEntering(Page){
   closeSideMenu()

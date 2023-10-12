@@ -90,6 +90,19 @@
   align-items: center;
   color: white;
 }
+#ContentBlocker {
+  position: fixed;
+  top: 40px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0ee0;
+  animation: Fadein 0.3s;
+  -webkit-animation: Fadein 0.3s ease-in;
+  -moz-animation: Fadein 0.3s ease-in;
+  -o-animation: Fadein 0.3s ease-in;
+  -ms-animation: Fadein 0.3s ease-in;
+}
 .slideIn{
   right: -50px;
   animation: slideIn 1s forwards;
@@ -219,7 +232,7 @@
 }
 
 .Fadein{
-  animation: Fadein 2s;
+  animation: Fadein 1s;
   -webkit-animation: Fadein 1s ease-in;
   -moz-animation: Fadein 1s ease-in;
   -o-animation: Fadein 1s ease-in;
