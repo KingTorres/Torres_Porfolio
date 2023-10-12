@@ -29,7 +29,7 @@
 }
 .CompanyCard div{
     font-weight: bold;
-    margin: 5% 5% 1% 5%;
+    margin: 3% 5% 0% 5%;
 }
 .CompanyCard div span{
     font-variant: small-caps;
@@ -38,6 +38,15 @@
 }
 .CompanyCard ul{
     list-style-type: circle;
-    margin: 0% 5% 2% 5%;
+    margin: 0% 5% 0% 5%;
     color: #eeeeee;
+}
+.Background_Container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.BackgroundItem2 {
+    grid-row: span 2;
 }

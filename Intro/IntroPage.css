@@ -34,3 +34,9 @@
     text-align: center;
     color: #d6d6d6;
 }
+.Intro_Container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}

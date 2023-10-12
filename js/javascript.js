@@ -53,3 +53,18 @@ function reveal() {
     }
   }
   window.addEventListener("scroll", reveal);
+  
+  $(document).ready(function(){
+    if(window.innerWidth < 992){
+    }
+    else{
+        // Background
+      $('#Background_Container').addClass('Background_Container')
+      $('#BackgroundItem2').addClass('BackgroundItem2')
+      // Skills
+      $('#Skills_Container').addClass('Skills_Container')
+      $('.Skill_icon').addClass('col-3')
+      // Intro
+      $('#Intro_Container').addClass('Intro_Container')
+    }
+  });

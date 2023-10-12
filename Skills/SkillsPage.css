@@ -50,3 +50,11 @@
     font-variant: normal;
     font-weight: bold;
 }
+.Skills_Container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.SkillItem1 {
+    grid-row: span 2;
+}
