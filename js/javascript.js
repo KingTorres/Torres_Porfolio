@@ -95,4 +95,3 @@ function reveal() {
       $('#Intro_Container').addClass('Intro_Container')
     }
   });
-  
