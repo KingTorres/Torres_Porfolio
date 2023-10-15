@@ -52,13 +52,18 @@
     width: 90%;
     margin: auto;
     margin-top: 2%;
-    border: 1px solid #d6d6d6;
+    border: 1px solid #61677A;
     padding-top: 10px;
 }
-.Intro_name > span{
+#Intname{
     font-size: 25px;
     color: #ffffff;
     text-shadow: 2px 1px #19191b;
+}
+.Intro_name > span > span{
+    font-variant: small-caps;
+    font-size: medium;
+    color: #bebebe;
 }
 .Intro_name > img{
     position: relative;
