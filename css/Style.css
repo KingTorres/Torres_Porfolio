@@ -435,6 +435,7 @@
   font-variant: small-caps;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px #000000;
 }
@@ -555,6 +556,13 @@ footer {
     width: 58%;
   }
 }
+@media (max-width: 470px)
+{
+  .Contenthead > h1{
+    font-size: 28px;
+  }
+}
+
 /* Min */
 @media (min-width: 601px)
 {
