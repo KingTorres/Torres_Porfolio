@@ -67,3 +67,9 @@
         margin: 3%;
     }
 }
+.Contenthead > h1 {
+    background-image: url("../images/svg/Background_Banner.svg");
+    background-color: #0f0f0f;
+    background-repeat: repeat;
+    background-size: contain;
+}
