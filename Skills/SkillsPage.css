@@ -7,41 +7,23 @@
 .SkillsPage .container{
     margin-top: 1%;
 }
-/* 1st Div */
-.SkillCard {
-    border: 1px solid #61677A;
-    background-color: #0d1117a8;
-    color: #ffffff;
-    padding: 15px;
-    border-radius: 20px;
-    margin-bottom: 3%;
-}
-/* 2nd Div */
-.SkillCard p{
-    border-bottom: 2px solid #61677A;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    margin: 15px 10% 2% 10%;
-    padding: 5px;
-    padding-bottom: 10px;
-}
 .Skill_body{
     justify-content: center;
 }
-.SkillCard img {
+.Section_Card img {
     width: 40px;
     height: 40px;
     margin-bottom: 5px;
 }
 .Skill_icon {
     text-align: center;
-    background-color: rgba(112, 112, 112, 0.3);
     border-radius: 20px;
     font-variant: small-caps;
     padding: 10px;
     margin: 4%;
     font-size: x-small;
+    border: 1px solid #0a192e;
+    border-width: thin;
 }
 .Skill_icon:hover{
     background-color: #eeeeee;
@@ -58,7 +40,7 @@
     grid-row: span 2;
 }
 @media (min-width: 992px) {
-    .SkillCard img {
+    .Section_Card img {
         width: 30px;
         height: 30px;
     }
@@ -67,8 +49,8 @@
     }
 }
 .Contenthead > h1 {
-    background-image: url("../images/svg/Background_Banner.svg");
-    background-color: #0f0f0f;
+    background-image: url("../images/Background_Banner.webp");
+    background-color: #01122b57;
     background-repeat: repeat;
     background-size: contain;
 }
