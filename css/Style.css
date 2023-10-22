@@ -159,6 +159,10 @@
   height: 60px;
   width: 60px;
   animation: loading 0.2s infinite;
+  -webkit-animation: loading 0.2s infinite;
+  -moz-animation: loading 0.2s infinite;
+  -o-animation: loading 0.2s infinite;
+  -ms-animation: loading 0.2s infinite;
 }
 @keyframes loading {
   0% {rotate: 0deg;}
