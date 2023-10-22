@@ -95,3 +95,10 @@ function reveal() {
       $('#Intro_Container').addClass('Intro_Container')
     }
   });
+
+  $('Contenthead a').on('click', function (e) {
+    var targetSec = $(this).text();
+    $('html, body').animate({
+       scrollTop: $('#' + targetSec).offset().top
+    }, 2000);
+ });
