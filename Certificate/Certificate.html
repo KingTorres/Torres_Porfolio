@@ -14,46 +14,47 @@
   <!-- Adding Background Page -->
   <link rel="stylesheet" href="CertificatePage.css">
   <div class="fixedBG"></div>
-</head>
-<body>
-<div class="floater">
-  <div id="ContentBlocker" style="display: none;"></div>
-  <div class="PageSection"><div>Certificate</div></div>
-  <div id="sideMenu" class="sideMenu float-right" style="display: none;">
-    <div id="closeSideMenu" class="closeSideMenu" onclick="closeSideMenu()">
-      ✕
+  <nav class="floater">
+    <div id="ContentBlocker" style="display: none;"></div>
+    <div class="PageSection"><div>Certificate</div></div>
+    <div class="TopButton" onclick="ScrolltoTop()">⇥</div>
+    <div id="sideMenu" class="sideMenu float-right" style="display: none;">
+      <div id="closeSideMenu" class="closeSideMenu" onclick="closeSideMenu()">
+        ✕
+      </div>
+      <div onclick="PageEntering('Intro')">Intro</div>
+      <div onclick="PageEntering('Skills')">Skills</div>
+      <div onclick="PageEntering('Background')">Background</div>
+      <div style="color: #ffffff; font-weight: bold;">Certificate</div>
     </div>
-    <div onclick="PageEntering('Intro')">Intro</div>
-    <div onclick="PageEntering('Skills')">Skills</div>
-    <div onclick="PageEntering('Background')">Background</div>
-    <div style="color: #ffffff; font-weight: bold;">Certificate</div>
-  </div>
-  <div id="CallCard" class="CallCard float-left">
-    <div class="closeCallCard float-right" onclick="closeCallCard()">✕</div>
-    <img class="Prof_Pic" src="../images/profile.jpg" alt="Profile">
-    <p><b>Michael Torres</b><br/>
-    Email: torres.michael36@gmail.com<br/>
-    Contact: +639493923708<br/>
-    Country: Philippines</p>
-  </div>
-  <div class="navBar">
-    <div id="Profile" class="Profile Breathing float-left" onclick="OpenCallCard()">
-      Torres
+    <div id="CallCard" class="CallCard float-left">
+      <div class="closeCallCard float-right" onclick="closeCallCard()">✕</div>
+      <img class="Prof_Pic" src="../images/profile.jpg" alt="Profile">
+      <p><b>Michael Torres</b><br/>
+      Email: torres.michael36@gmail.com<br/>
+      Contact: +639493923708<br/>
+      Country: Philippines</p>
     </div>
-    <div id="Burger" class="Burger float-right" onclick="OpensideMenu()">☰
-    </div>
-    <div class="row">
-      <div id="navMenu" class="container navMenu">
-        <nav class="row">
-          <div class="col-3" onclick="PageEntering('Intro')">Intro</div>
-          <div class="col-2" onclick="PageEntering('Skills')">Skills</div>
-          <div class="col-4" onclick="PageEntering('Background')">Background</div>
-          <div class="col-3" style="color: #ffffff; font-weight: bolder;">Certificate</div>
-        </nav>
+    <div class="navBar">
+      <div id="Profile" class="Profile Breathing float-left" onclick="OpenCallCard()">
+        Torres
+      </div>
+      <div id="Burger" class="Burger float-right" onclick="OpensideMenu()">☰
+      </div>
+      <div class="row">
+        <div id="navMenu" class="container navMenu">
+          <nav class="row">
+            <div class="col-3" onclick="PageEntering('Intro')">Intro</div>
+            <div class="col-2" onclick="PageEntering('Skills')">Skills</div>
+            <div class="col-4" onclick="PageEntering('Background')">Background</div>
+            <div class="col-3" style="color: #ffffff; font-weight: bolder;">Certificate</div>
+          </nav>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+</nav>
+</head>
+<body>
 <div id="Content" class="CertificatePage">
   <div class="container">
     <div class="Contenthead reveal active fade-bottom-scroll" style="background-color: rgba(0,0,0,0);">
@@ -61,7 +62,6 @@
         <a class="Fadein" href="#card-1">Bootstrap</a>
         <a class="Fadein" href="#card-1">JavaScript</a>
         <a class="Fadein" href="#card-1">PHP Stack</a>
-      <h4 class="Directing">↑ <span>SCROLL</span> ↓</h4>
     </div>
     <div id="card-1" class="CertCard reveal fade-left-scroll">
       <p>CSS, Bootstrap, JavaScript And PHP Stack Complete Course</p>

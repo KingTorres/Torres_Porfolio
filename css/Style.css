@@ -24,7 +24,7 @@
 .navBar
 {
   background-color: #4c4d4e;
-  border-bottom: 1px solid #09ffea;
+  border-bottom: 1px solid #09ceff;
   box-shadow: 2px 2px 8px #000000;
   height: 40px;
   color: #ffffff;
@@ -92,8 +92,24 @@
   align-items: center;
   justify-content: center;
 }
+.TopButton{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: -90deg;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #272829;
+  border-left: 1px solid #09ceff;
+  color: #09ceff;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px 10px 10px 0px;
+}
 .sideMenu{
-  border-left: 2px solid #09ffea;
+  border-left: 2px solid #09ceff;
   background-color: #272829;
   top: 0px;
   right: -300px;
@@ -290,42 +306,6 @@
 @-ms-keyframes Fadein{
   0% {opacity: 0; transform: translateY(50px);}
   100% {opacity: 1; transform: translateY(0px);}
-}
-
-.Directing {
-  text-align: center;
-  color: #888888;
-  animation: Directing 2s;
-  -webkit-animation: Directing 2s infinite;
-  -moz-animation: Directing 2s infinite;
-  -o-animation: Directing 2s infinite;
-  -ms-animation: Directing 2s infinite;
-}
-.Directing span{
-  font-variant: small-caps;
-  font-size: small;
-  vertical-align: middle;
-}
-@keyframes Directing {
-  0% {transform: translateY(-20px);}
-  50% {transform: translateY(0px);}
-  100% {transform: translateY(-20px);}
-}
-@-moz-keyframes Directing{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-webkit-keyframes Directing{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-o-keyframes Directing{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-ms-keyframes Directing{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
 }
 /* For Scroll-Revealing Function */
 .reveal {
@@ -586,9 +566,6 @@ footer {
   .Contenthead a{
     margin: 6% 16% 0% 16%;
   }
-  .Contenthead h4{
-    margin: 5% 0% 0% 0%;
-  }
 }
 @media (min-width: 535px) /*small value first*/
 {
@@ -599,9 +576,6 @@ footer {
     margin: 1% 17% 0% 17%;
     padding: 6% 0% 2% 0%;
   }
-  .Contenthead h4{
-    margin: 5% 0% 0% 0%;
-  }
 }
 @media (min-width: 992px)
 {
@@ -611,8 +585,5 @@ footer {
   .Contenthead a{
     margin: 0% 30% 1% 30%;
     padding: 3% 0% 1% 0%;
-  }
-  .Contenthead h4{
-    margin: 3% 0% 0% 0%;
   }
 }

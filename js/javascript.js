@@ -95,3 +95,7 @@ function reveal() {
       $('#Intro_Container').addClass('Intro_Container')
     }
   });
+
+  function ScrolltoTop(){
+    $("html, body").animate({ scrollTop: "0" }, 500);
+  }
