@@ -97,5 +97,5 @@ function reveal() {
   });
 
   function ScrolltoTop(){
-    $("html, body").animate({ scrollTop: "0" }, 500);
+    $("html, body").animate({ scrollTop: "0" }, 200);
   }

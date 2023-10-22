@@ -101,12 +101,15 @@
   border-radius: 50%;
   height: 40px;
   width: 40px;
-  background-color: #272829;
-  border-left: 1px solid #09ceff;
-  color: #09ceff;
+  background-color: #61677A;
+  color: #D8D9DA;
+  font-size: 25px;
   right: 0px;
   bottom: 0px;
-  margin: 0px 10px 10px 0px;
+  margin: 0px 30px 30px 0px;
+}
+.TopButton:hover{
+  color: #2e2e2e;
 }
 .sideMenu{
   border-left: 2px solid #09ceff;
