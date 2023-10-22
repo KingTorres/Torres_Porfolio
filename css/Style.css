@@ -23,7 +23,7 @@
 /* Navbar */
 .navBar
 {
-  background-color: #4c4d4e;
+  background-color: #272829;
   border-bottom: 1px solid #09ceff;
   box-shadow: 2px 2px 8px #000000;
   height: 40px;
@@ -33,7 +33,7 @@
   margin: auto;
 }
 .navMenu {
-  background-color: #272829;
+  background-color: #0d1117;
   border-radius: 50px 0px 20px 0px;
   padding: 3px 8% 3px 8%;
   text-align: center;
@@ -85,7 +85,7 @@
 }
 .PageSection div{
   border-radius: 0px 0px 80px 80px;
-  background-color: #272829;
+  background-color: #0d1117;
   color: #D8D9DA;
   width: 100%;
   display: flex;
@@ -101,8 +101,8 @@
   border-radius: 50%;
   height: 40px;
   width: 40px;
-  background-color: #61677A;
-  color: #D8D9DA;
+  background-color: #09ceff7a;
+  color: #ffffff;
   font-size: 25px;
   right: 0px;
   bottom: 0px;
