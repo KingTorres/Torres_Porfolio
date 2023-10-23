@@ -49,8 +49,7 @@
     height: 118px;
 }
 .Contenthead > h1 {
-    background-image: url("../images/Background_Banner.webp");
-    background-color: #01122b57;
+    background: linear-gradient(140deg, #010a18, #012868, #010a18);
     background-repeat: repeat;
     background-size: contain;
 }
