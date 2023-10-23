@@ -94,7 +94,7 @@
   align-items: center;
   justify-content: center;
 }
-.TopButton{
+#TopButton{
   position: fixed;
   display: none;
   align-items: center;
@@ -110,7 +110,7 @@
   bottom: 0px;
   margin: 0px 30px 30px 0px;
 }
-.TopButton:hover{
+#TopButton:hover{
   color: #2e2e2e;
 }
 .sideMenu{
@@ -577,9 +577,6 @@ footer {
     .PageSection {
       display: flex;
     }
-    .TopButton{
-      display: flex;
-    }
 }
 @media (max-width: 500px)
 {
@@ -611,6 +608,9 @@ footer {
       display: none !important;
     }
     #ContentBlocker{
+      display: none !important;
+    }
+    #TopButton{
       display: none !important;
     }
 }

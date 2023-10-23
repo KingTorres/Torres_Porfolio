@@ -96,6 +96,15 @@ function reveal() {
     }
   });
 
-  function ScrolltoTop(){
-    $("html, body").animate({ scrollTop: "0" }, 200);
+// Back to top button
+function ScrolltoTop(){
+  $("html, body").animate({ scrollTop: "0" }, 200);
+}
+window.onscroll = function() {BacktoTopButton()}; //listener
+function BacktoTopButton() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById('TopButton').style.display = "flex";
+  } else {
+    document.getElementById('TopButton').style.display = "none";
   }
+}
