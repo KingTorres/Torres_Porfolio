@@ -22,6 +22,10 @@
     color: #cacaca;
     font-size: medium;
 }
+.Section_Card ul li{
+    border-bottom: 1px solid #0d2547;
+    margin-bottom: 12px;
+}
 .Background_Container {
     display: grid;
     gap: 1rem;

@@ -12,7 +12,8 @@
     margin-top: 5%;
     margin-bottom: 3%;
     text-align: center;
-    color: #d6d6d6;
+    color: #cacaca;
+    font-size: medium;
 }
 .Intro_Container {
     display: grid;
