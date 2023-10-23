@@ -20,7 +20,7 @@
   height: 100vh;
   width: 100vw;
   z-index: -2;
-  opacity: 40%;
+  opacity: 60%;
 }
 /* Navbar */
 .navBar
@@ -114,7 +114,7 @@
   color: #2e2e2e;
 }
 .sideMenu{
-  border-left: 2px solid #09ceff;
+  border-left: 1px solid #09ceff;
   background-color: #0d1117;
   top: 0px;
   right: -300px;
