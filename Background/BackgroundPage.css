@@ -8,18 +8,19 @@
     margin-top: 1%;
 }
 .Section_Card div{
-    font-weight: bold;
-    margin: 3% 5% 0% 5%;
+    margin: 5% 5% 0% 5%;
+    color: #cacaca;
 }
 .Section_Card div span{
     font-variant: small-caps;
-    color: #8f8f8f;
+    color: #636363;
     font-size: medium;
 }
 .Section_Card ul{
     list-style-type: circle;
     margin: 0% 5% 0% 5%;
-    color: #eeeeee;
+    color: #cacaca;
+    font-size: medium;
 }
 .Background_Container {
     display: grid;
