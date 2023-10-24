@@ -490,14 +490,20 @@
 
 footer {
   bottom: 0px;
-  color: #61677A;
-  font-size: 16px;
+  color: #4c4d4e;
+  font-size: 14px;
   margin-top: 5%;
   padding-bottom: 3px;
   padding-left: 2px;
-  background: #272829;
+  background: #050c16;
+  text-align: center;
 }
-
+.DescriptionDiv{
+  width: 95%;
+  margin: auto;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #0d2547;
+}
 /* Entering Page */
 .EnlargePage {
   z-index: 3;
