@@ -26,8 +26,8 @@
   opacity: 60%;
 }
 .fixedBG div{
-  height: 300px;
-  width: 300px;
+  height: 50%;
+  width: 50%;
   background-image: url("../images/svg/MT_Logo.svg");
   background-size: cover;
   background-position: center center;
