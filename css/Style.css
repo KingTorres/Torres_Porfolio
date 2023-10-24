@@ -35,7 +35,7 @@
   margin: auto;
 }
 .navMenu {
-  background-color: #080a0e;
+  background-color: #2e2e31;
   border-radius: 50px 0px 20px 0px;
   padding: 3px 8% 3px 8%;
   text-align: center;
@@ -87,7 +87,7 @@
 }
 .PageSection div{
   border-radius: 0px 0px 80px 80px;
-  background-color: #080a0e;
+  background-color: #2e2e31;
   color: #D8D9DA;
   width: 100%;
   display: flex;
