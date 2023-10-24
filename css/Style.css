@@ -48,11 +48,18 @@
 }
 .Profile {
   cursor: pointer;
-  padding: 6px 15px 0px 15px;
+  width: 11.5%;
+  height: 40px;
   font-variant: small-caps;
   font-size: bold;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Profile img{
+  height: 33px;
+  object-fit: cover;
 }
 .Burger {
   cursor: pointer;
@@ -82,7 +89,7 @@
   width: 60%;
   height: 30px;
   top: 0px;
-  margin: 0px 16% 20px 24%;
+  margin: 0px 16% 20px 20.5%;
   font-variant: small-caps;
 }
 .PageSection div{
@@ -120,7 +127,7 @@
   right: -300px;
   position: absolute;
   height: 100vh;
-  width: 35%;
+  width: 40%;
   color: #cccccc;
   font-variant: small-caps;
 }
@@ -128,6 +135,10 @@
   margin-left: 15px;
   margin-top: 25px;
   font-size: 20px;
+}
+.Menu{
+  position: relative;
+  z-index: 1;
 }
 .sideMenu .closeSideMenu {
   cursor: pointer;
@@ -154,35 +165,37 @@
 }
 .loading {
   display: flex;
-  border-radius: 50%;
-  border-bottom: 2px solid #09ceff;
+  background-image: url("../images/svg/MT_Logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 60px;
   width: 60px;
-  animation: loading 0.2s infinite;
-  -webkit-animation: loading 0.2s infinite;
-  -moz-animation: loading 0.2s infinite;
-  -o-animation: loading 0.2s infinite;
-  -ms-animation: loading 0.2s infinite;
+  animation: loading 0.5s infinite;
+  -webkit-animation: loading 0.5s infinite;
+  -moz-animation: loading 0.5s infinite;
+  -o-animation: loading 0.5s infinite;
+  -ms-animation: loading 0.5s infinite;
 }
 @keyframes loading {
-  0% {rotate: 0deg;}
-  100%{rotate: 360deg;}
+  0% {opacity: 1;}
+  100%{opacity: 0;}
 }
 @-moz-keyframes loading {
-  0% {rotate: 0deg;}
-  100%{rotate: 360deg;}
+  0% {opacity: 1;}
+  100%{opacity: 0;}
 }
 @-webkit-keyframes loading {
-  0% {rotate: 0deg;}
-  100%{rotate: 360deg;}
+  0% {opacity: 1;}
+  100%{opacity: 0;}
 }
 @-o-keyframes loading {
-  0% {rotate: 0deg;}
-  100%{rotate: 360deg;}
+  0% {opacity: 1;}
+  100%{opacity: 0;}
 }
 @-ms-keyframes loading {
-  0% {rotate: 0deg;}
-  100%{rotate: 360deg;}
+  0% {opacity: 1;}
+  100%{opacity: 0;}
 }
 .slideIn{
   right: -50px;
@@ -262,8 +275,11 @@
   top: 40px;
   padding: 5px;
   width: 350px;
-  color: #cccccc;
+  color: #f8f8f8;
   font-size: small;
+}
+.CallCard p{
+  position: relative;
 }
 .Prof_Pic{
   float: left;
@@ -273,12 +289,32 @@
   padding: 5px;
   margin-right: 5px;
 }
+.logoBG{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.logoBG div{
+  height: 100%;
+  width: 85%;
+  margin: auto;
+  background-image: url("../images/svg/MT_Logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  opacity: 0.3;
+}
 .closeCallCard {
+  position: relative;
   cursor: pointer;
   padding-right: 10px;
   padding-left: 10px;
   color: red;
   font-weight: bolder;
+  z-index: 1;
 }
 /* 1st Div */
 .Section_Card {
