@@ -28,14 +28,7 @@
       font-size: 100px;
       font-variant: small-caps;
     }
-
-    .banging {
-    animation: banging 2s forwards;
-    -webkit-animation: banging 2s forwards;
-    -moz-animation: banging 2s forwards;
-    -o-animation: banging 2s forwards;
-    -ms-animation: banging 2s forwards;
-  }
+    
   .circle{
     background-color: #006e75;
     border-radius: 50%;
@@ -46,7 +39,34 @@
     align-items: center;
     opacity: 0.3;
   }
+    .banging {
+    animation: banging 2s forwards;
+    -webkit-animation: banging 2s forwards;
+    -moz-animation: banging 2s forwards;
+    -o-animation: banging 2s forwards;
+    -ms-animation: banging 2s forwards;
+  }
   @keyframes banging {
+    0% {height: 0%; width: 0%;}
+    50%{height: 100%; width: 100%; opacity: 1;}
+    100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
+  }
+  @-moz-keyframes banging {
+    0% {height: 0%; width: 0%;}
+    50%{height: 100%; width: 100%; opacity: 1;}
+    100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
+  }
+  @-webkit-keyframes banging {
+    0% {height: 0%; width: 0%;}
+    50%{height: 100%; width: 100%; opacity: 1;}
+    100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
+  }
+  @-o-keyframes banging {
+    0% {height: 0%; width: 0%;}
+    50%{height: 100%; width: 100%; opacity: 1;}
+    100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
+  }
+  @-ms-keyframes banging {
     0% {height: 0%; width: 0%;}
     50%{height: 100%; width: 100%; opacity: 1;}
     100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
@@ -64,16 +84,60 @@
     50%{height: 100%; width: 100%; opacity: 1; top: 0%; left: 0%;}
     100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
   }
+  @-moz-keyframes banging2 {
+    0% {height: 0%; width: 0%; top: 100%; left: 100%;}
+    50%{height: 100%; width: 100%; opacity: 1; top: 0%; left: 0%;}
+    100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
+  }
+  @-webkit-keyframes banging2 {
+    0% {height: 0%; width: 0%; top: 100%; left: 100%;}
+    50%{height: 100%; width: 100%; opacity: 1; top: 0%; left: 0%;}
+    100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
+  }
+  @-o-keyframes banging2 {
+    0% {height: 0%; width: 0%; top: 100%; left: 100%;}
+    50%{height: 100%; width: 100%; opacity: 1; top: 0%; left: 0%;}
+    100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
+  }
+  @-ms-keyframes banging2 {
+    0% {height: 0%; width: 0%; top: 100%; left: 100%;}
+    50%{height: 100%; width: 100%; opacity: 1; top: 0%; left: 0%;}
+    100%{height: 100%; width: 100%; opacity: 0; color: #006e75;}
+  }
   .logo {
     text-align: center;
     color: aliceblue;
-    animation: logo 4s forwards;
-    animation-delay: 0.8s;
     opacity: 0;
     font-variant: small-caps;
     font-size: large;
+    animation: logo 4s forwards;
+    -webkit-animation: logo 4s forwards;
+    -moz-animation: logo 4s forwards;
+    -o-animation: logo 4s forwards;
+    -ms-animation: logo 4s forwards;
+    animation-delay: 0.8s;
   }
   @keyframes logo {
+    0% {opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+  }
+  @-moz-keyframes logo {
+    0% {opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+  }
+  @-webkit-keyframes logo {
+    0% {opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+  }
+  @-o-keyframes logo {
+    0% {opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+  }
+  @-ms-keyframes logo {
     0% {opacity: 0;}
     50%{opacity: 1;}
     100%{opacity: 0;}
