@@ -1,26 +1,26 @@
 function OpensideMenu(){
-    $("#sideMenu").css("display","block")
-    $("#sideMenu").attr("class","sideMenu slideIn")
+    document.getElementById('sideMenu').style.display = "block";
+    document.getElementById('sideMenu').setAttribute("class","sideMenu slideIn");
     closeCallCard()
-    $("#ContentBlocker").css("display","flex")
+    document.getElementById('ContentBlocker').style.display = "flex";
 }
 function closeSideMenu(){
-    $("#ContentBlocker").css("display","none")
-    $("#sideMenu").attr("class","sideMenu slideOut")
+    document.getElementById('ContentBlocker').style.display = "none";
+    document.getElementById('sideMenu').setAttribute("class","sideMenu slideOut");
 }
 function OpenCallCard(){
-    $("#CallCard").css("display","block")
+    document.getElementById('CallCard').style.display = "block";
     closeSideMenu()
-    $("#ContentBlocker").css("display","flex")
+    document.getElementById('ContentBlocker').style.display = "flex";
 }
 function closeCallCard(){
-    $("#CallCard").css("display","none")
-    $("#ContentBlocker").css("display","none")
+    document.getElementById('CallCard').style.display = "none";
+    document.getElementById('ContentBlocker').style.display = "none";
 }
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
 async function PageEntering(Page){
   closeSideMenu()
-  $("#PageEntering").css("display","flex")
+  document.getElementById('PageEntering').style.display = "flex";
   await sleepNow(1000)
   switch (Page)
     {
@@ -40,9 +40,26 @@ async function PageEntering(Page){
             break;
     }
 }
+// Revealing Item when in scrolled
+window.addEventListener("scroll", reveal);
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 210;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+}
 function ScrolltoTop(){
   $("html, body").animate({ scrollTop: "0" }, 200); //numeric css property only
 }
+// Jquery ================================================================ 
   $(document).ready(function(){ //If page is loaded
     if(window.innerWidth < 992){
       $('#Background_Container').removeClass('Background_Container')
@@ -85,25 +102,8 @@ function ScrolltoTop(){
 window.onscroll = function() {BacktoTopButton();}; //listener
 function BacktoTopButton() {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-    $("#TopButton").css("display","flex")
+    $('#TopButton').css("display","flex")
   } else {
-    $("#TopButton").css("display","none")
+    $('#TopButton').css("display","none")
   }
-}
-
-// Revealing Item when in scrolled JAVASCRIPT
-window.addEventListener("scroll", reveal);
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 210;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
 }
