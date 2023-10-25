@@ -41,6 +41,7 @@ async function PageEntering(Page){
     }
 }
 // Revealing Item when in scrolled
+window.addEventListener("scroll", reveal);
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {
@@ -55,9 +56,9 @@ function reveal() {
       }
     }
   }
-  window.addEventListener("scroll", reveal);
   
-  $(document).ready(function(){
+// Jquery ================================================================ 
+  $(document).ready(function(){ //If page is loaded
     if(window.innerWidth < 992){
       $('#Background_Container').removeClass('Background_Container')
       $('#BackgroundItem2').removeClass('BackgroundItem2')
@@ -76,7 +77,7 @@ function reveal() {
       $('#Intro_Container').addClass('Intro_Container')
     }
   });
-  $(window).on("resize", function(){
+  $(window).on("resize", function(){ //If page is resizing
     if(window.innerWidth < 992){
       $('#Background_Container').removeClass('Background_Container')
       $('#BackgroundItem2').removeClass('BackgroundItem2')
@@ -100,11 +101,11 @@ function reveal() {
 function ScrolltoTop(){
   $("html, body").animate({ scrollTop: "0" }, 200);
 }
-window.onscroll = function() {BacktoTopButton()}; //listener
+window.onscroll = function() {BacktoTopButton();}; //listener
 function BacktoTopButton() {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-    document.getElementById('TopButton').style.display = "flex";
+    $('#TopButton').css("display","flex")
   } else {
-    document.getElementById('TopButton').style.display = "none";
+    $('#TopButton').css("display","none")
   }
 }

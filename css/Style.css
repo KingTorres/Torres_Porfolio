@@ -551,12 +551,6 @@ footer {
   background: #050c16;
   text-align: center;
 }
-.DescriptionDiv{
-  width: 95%;
-  margin: auto;
-  padding-bottom: 3px;
-  border-bottom: 1px solid #0d2547;
-}
 /* Entering Page */
 .EnlargePage {
   z-index: 3;
