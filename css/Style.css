@@ -72,6 +72,7 @@
 .Profile img{
   height: 33px;
   object-fit: cover;
+  padding-bottom: 2px;
 }
 .Burger {
   cursor: pointer;
@@ -313,7 +314,6 @@
   left: 0;
 }
 .logoBG div{
-  border: 1px solid ridge;
   height: 85%;
   width: 85%;
   margin: auto;
