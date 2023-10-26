@@ -79,3 +79,9 @@
     left: 12.5%;
   }
 }
+@media (max-width: 396px)
+{
+  .Section_Card p{
+    font-size: medium;
+  }
+}
