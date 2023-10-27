@@ -53,7 +53,7 @@ $(document).ready(function(){ //If page is loaded
     $('#Intro_Container').removeClass('Intro_Container')
   }
   else{
-      // Background
+    // Background
     $('#Background_Container').addClass('Background_Container')
     $('#BackgroundItem2').addClass('BackgroundItem2')
     // Skills
@@ -81,6 +81,55 @@ $(window).on("resize", function(){ //If page is resizing
     $('#Intro_Container').addClass('Intro_Container')
   }
 });
+$(window).ready(function(){ //If page is load
+  if(window.innerWidth >= 992){
+    for (i=1;i<=3;i++){
+      $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
+      if(i==1)
+      {
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-1')
+      }else{
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-2')
+      }
+    }
+  }
+  else{
+    for (i=1;i<=3;i++){
+      if(i==1)
+      {
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-1')
+      }else{
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-2')
+      }
+      $('#card-' + [i] + ' .Skill_icon').addClass('col-3')
+    }
+  }
+});
+$(window).on("resize", function(){ //If page is resizing
+  if(window.innerWidth >= 992){
+    for (i=1;i<=3;i++){
+      $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
+      if(i==1)
+      {
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-1')
+      }else{
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-2')
+      }
+    }
+  }
+  else{
+    for (i=1;i<=3;i++){
+      if(i==1)
+      {
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-1')
+      }else{
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-2')
+      }
+      $('#card-' + [i] + ' .Skill_icon').addClass('col-3')
+    }
+  }
+});
+
 // Back to top button
 window.onscroll = function() {BacktoTopButton();}; //listener
 function BacktoTopButton() {

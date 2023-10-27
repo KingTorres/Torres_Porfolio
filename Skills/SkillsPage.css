@@ -36,9 +36,6 @@
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.SkillItem1 {
-    grid-row: span 2;
-}
 @media (min-width: 992px) {
     .Section_Card img {
         width: 30px;
@@ -78,4 +75,16 @@
   .svg {
     left: 21.5%;
   }
+}
+@media (min-width: 992px)
+{
+    .Skills_Container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    #card-1 {
+        grid-column: span 3;
+    }
 }
