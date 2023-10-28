@@ -9,6 +9,7 @@
 }
 .CertCard_body{
     text-align: center;
+    max-height: max-content;
 }
 .CertCard_body img {
     display: inline-block;
@@ -16,6 +17,14 @@
     margin: 2%;
     object-fit: cover;
     width: 250px;
+}
+.CertCard_body img:hover {
+    position: relative;
+    width: 110%;
+    left: -5%;
+    margin: auto;
+    z-index: 1;
+    border: 2px solid #0180a0;
 }
 .CertCard_body span{
     font-size: small;
