@@ -45,6 +45,8 @@ async function PageEntering(Page){
         default:
             break;
     }
+  await sleepNow(5000)
+  $("#PageEntering").css("display","none")
 }
 function ScrolltoTop(){
   $("html, body").animate({ scrollTop: "0" }, 200); //numeric css property only
