@@ -36,6 +36,12 @@ async function PageEntering(Page){
         case 'Certificate':
             window.location.href = "../Certificate/Certificate.html";
             break;
+        case 'Cert1':
+            window.location = "https://ude.my/UC-a1c48038-82a7-4e66-aca2-9191215111a0";
+            break;
+        case 'Cert2':
+            window.location = "https://ude.my/UC-946f62bc-142d-4d75-b945-f73c135910a7";
+            break;
         default:
             break;
     }
