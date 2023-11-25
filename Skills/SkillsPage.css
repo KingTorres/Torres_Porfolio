@@ -1,10 +1,10 @@
-.SkillsPage {
+.Content {
     position: absolute;
     top: 50px;
     width: 100%;
     font-size: larger;
 }
-.SkillsPage .container{
+.Content .container{
     margin-top: 1%;
 }
 .Skill_body{

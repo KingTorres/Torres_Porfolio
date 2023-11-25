@@ -9,7 +9,7 @@ function closeSideMenu(){
     $("#sideMenu").attr("class","sideMenu slideOut")
 }
 function OpenCallCard(){
-    $("#CallCard").css("display","block")
+    $("#CallCard").css({"display":"block"})
     closeSideMenu()
     $("#ContentBlocker").css("display","flex")
 }
@@ -20,38 +20,47 @@ function closeCallCard(){
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
 async function PageEntering(Page){
   closeSideMenu()
+  ScrolltoTop()
   $("#PageEntering").css("display","flex")
-  await sleepNow(1000)
-  switch (Page)
-    {
-        case 'Intro':
-            window.location.href = "../Intro/Intro.html";
-            break;
-        case 'Skills':
-            window.location.href = "../Skills/Skills.html";
-            break;
-        case 'Background':
-            window.location.href = "../Background/Background.html";
-            break;
-        case 'Certificate':
-            window.location.href = "../Certificate/Certificate.html";
-            break;
-        case 'Cert1':
-            window.location = "https://ude.my/UC-946f62bc-142d-4d75-b945-f73c135910a7";
-            break;
-        case 'Cert2':
-            window.location = "https://ude.my/UC-a1c48038-82a7-4e66-aca2-9191215111a0";
-            break;
-        default:
-            break;
+  // await sleepNow(1000)
+  let xhttp; //using http request
+  let element = document.getElementById("Content"); //target id parameter
+    if (Page) {
+        if (Page == "Cert1"){
+          window.location = "https://ude.my/UC-946f62bc-142d-4d75-b945-f73c135910a7";
+          await sleepNow(1500)
+          return $("#PageEntering").css("display","none")
+        }
+        if (Page == "Cert2"){
+          window.location = "https://ude.my/UC-a1c48038-82a7-4e66-aca2-9191215111a0";
+          await sleepNow(1500)
+          return $("#PageEntering").css("display","none")
+        }
+        else{
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                  if (this.status == 200) {element.innerHTML = this.responseText;}
+                  if (this.status == 404) {element.innerHTML = "<h1>Page not found.</h1>";}
+              }
+          }
+          xhttp.open("GET", "../"+Page+"/"+Page+".html", true);
+          xhttp.send();
+          $(".PageSection").html("<div>"+Page+"</div>");
+          $(".navIntro").css({"font-weight": "" ,"color": ""}); //remove css style
+          $(".navSkills").css({"font-weight": "" ,"color": ""}); //remove css style
+          $(".navBackground").css({"font-weight": "" ,"color": ""}); //remove css style
+          $(".navCertificate").css({"font-weight": "" ,"color": ""}); //remove css style
+          $(".nav"+Page).css({"font-weight": "bold" ,"color": "white"}); //add css style
+          closeCallCard()
+          await sleepNow(500)
+          $("#PageEntering").css("display","none");
+          return;
+        }
     }
-  await sleepNow(5000)
-  $("#PageEntering").css("display","none")
 }
-function ScrolltoTop(){
-  $("html, body").animate({ scrollTop: "0" }, 200); //numeric css property only
-}
-$(document).ready(function(){ //If page is loaded
+window.addEventListener("scroll", responsiveness);
+function responsiveness(){
   if(window.innerWidth < 992){
     $('#Background_Container').removeClass('Background_Container')
     $('#BackgroundItem2').removeClass('BackgroundItem2')
@@ -69,7 +78,29 @@ $(document).ready(function(){ //If page is loaded
     // Intro
     $('#Intro_Container').addClass('Intro_Container')
   }
-});
+  if(window.innerWidth >= 992){
+    for (i=1;i<=3;i++){
+      $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
+      if(i==1)
+      {
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-1')
+      }else{
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-2')
+      }
+    }
+  }
+  else{
+    for (i=1;i<=3;i++){
+      if(i==1)
+      {
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-1')
+      }else{
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-2')
+      }
+      $('#card-' + [i] + ' .Skill_icon').addClass('col-3')
+    }
+  }
+}
 $(window).on("resize", function(){ //If page is resizing
   if(window.innerWidth < 992){
     $('#Background_Container').removeClass('Background_Container')
@@ -88,56 +119,33 @@ $(window).on("resize", function(){ //If page is resizing
     // Intro
     $('#Intro_Container').addClass('Intro_Container')
   }
-});
-$(window).ready(function(){ //If page is load
-  if(window.innerWidth >= 992){
-    for (i=1;i<=3;i++){
-      $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
-      if(i==1)
-      {
-        $('#card-' + [i] + ' .Skill_icon').addClass('col-1')
-      }else{
-        $('#card-' + [i] + ' .Skill_icon').addClass('col-2')
-      }
-    }
-  }
-  else{
-    for (i=1;i<=3;i++){
-      if(i==1)
-      {
-        $('#card-' + [i] + ' .Skill_icon').removeClass('col-1')
-      }else{
-        $('#card-' + [i] + ' .Skill_icon').removeClass('col-2')
-      }
-      $('#card-' + [i] + ' .Skill_icon').addClass('col-3')
-    }
-  }
-});
-$(window).on("resize", function(){ //If page is resizing
-  if(window.innerWidth >= 992){
-    for (i=1;i<=3;i++){
-      $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
-      if(i==1)
-      {
-        $('#card-' + [i] + ' .Skill_icon').addClass('col-1')
-      }else{
-        $('#card-' + [i] + ' .Skill_icon').addClass('col-2')
-      }
-    }
-  }
-  else{
-    for (i=1;i<=3;i++){
-      if(i==1)
-      {
-        $('#card-' + [i] + ' .Skill_icon').removeClass('col-1')
-      }else{
-        $('#card-' + [i] + ' .Skill_icon').removeClass('col-2')
-      }
-      $('#card-' + [i] + ' .Skill_icon').addClass('col-3')
-    }
-  }
-});
 
+  if(window.innerWidth >= 992){
+    for (i=1;i<=3;i++){
+      $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
+      if(i==1)
+      {
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-1')
+      }else{
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-2')
+      }
+    }
+  }
+  else{
+    for (i=1;i<=3;i++){
+      if(i==1)
+      {
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-1')
+      }else{
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-2')
+      }
+      $('#card-' + [i] + ' .Skill_icon').addClass('col-3')
+    }
+  }
+});
+function ScrolltoTop(){
+  $("html, body").animate({ scrollTop: "0" }, 200); //numeric css property only
+}
 // Back to top button
 window.onscroll = function() {BacktoTopButton();}; //listener
 function BacktoTopButton() {

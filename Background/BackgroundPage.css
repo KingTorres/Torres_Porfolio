@@ -1,10 +1,10 @@
-.BackgroundPage {
+.Content {
     position: absolute;
     top: 50px;
     width: 100%;
     font-size: larger;
 }
-.BackgroundPage .container{
+.Content .container{
     margin-top: 1%;
 }
 .Section_Card div{

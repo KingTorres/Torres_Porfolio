@@ -1,10 +1,10 @@
-.IntroPage {
+.Content {
     position: absolute;
     top: 50px;
     width: 100%;
     font-size: larger;
 }
-.IntroPage .container{
+.Content .container{
     margin-top: 1%;
 }
 .IntroCard_body{
