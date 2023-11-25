@@ -46,8 +46,7 @@ async function PageEntering(Page){
               }
           }
           xhttp.open("GET", "../"+Page+"/"+Page+".html", true);
-          xhttp.send();
-          $("#Content").css({"display": "block"})
+          xhttp.send();
           //==================
           $(".PageSection").html("<div>"+Page+"</div>");
           $(".navIntro").css({"font-weight": "" ,"color": ""}); //remove css style
@@ -57,6 +56,7 @@ async function PageEntering(Page){
           $(".nav"+Page).css({"font-weight": "bold" ,"color": "white"}); //add css style
           closeCallCard()
           await sleepNow(500)
+          $("#Content").css({"display": "block"})
           $("#PageEntering").css("display","none");
           return;
         }
