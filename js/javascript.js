@@ -21,6 +21,7 @@ const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) /
 async function PageEntering(Page){
   closeSideMenu()
   window.scrollTo(0,0);
+  $("#Content").css({"visibility": "hidden"})
   $("#PageEntering").css("display","flex")
   // await sleepNow(1000)
   let xhttp; //using http request
@@ -46,6 +47,8 @@ async function PageEntering(Page){
           }
           xhttp.open("GET", "../"+Page+"/"+Page+".html", true);
           xhttp.send();
+          $("#Content").css({"visibility": "visible"})
+          //==================
           $(".PageSection").html("<div>"+Page+"</div>");
           $(".navIntro").css({"font-weight": "" ,"color": ""}); //remove css style
           $(".navSkills").css({"font-weight": "" ,"color": ""}); //remove css style
