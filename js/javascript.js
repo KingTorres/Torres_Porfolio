@@ -20,7 +20,7 @@ function closeCallCard(){
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
 async function PageEntering(Page){
   closeSideMenu()
-  ScrolltoTop()
+  $("html, body").animate({ scrollTop: "0" }, 0); //another 0 is the animation time
   $("#PageEntering").css("display","flex")
   // await sleepNow(1000)
   let xhttp; //using http request
