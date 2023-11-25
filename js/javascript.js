@@ -58,8 +58,9 @@ async function PageEntering(Page){
           $("#Content").css({"visibility": "visible"})
           await sleepNow(500)
           $("#Content").css({"display": "none"})
-          $("#Content").css({"display": "block"})
           $("#PageEntering").css("display","none");
+         await sleepNow(100)
+         $("#Content").css({"display": "block"})
           return;
         }
     }
