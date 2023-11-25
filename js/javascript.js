@@ -35,9 +35,9 @@ async function PageEntering(Page){
           await sleepNow(3000)
           return $("#PageEntering").css("display","none")
         }
-        else{
-          window.scrollTo(0,0);
+        else{
           $("#Content").css({"display": "none"})
+          window.scrollTo(0,0);
           xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
               if (this.readyState == 4) {
