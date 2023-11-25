@@ -56,7 +56,7 @@ async function PageEntering(Page){
           $(".navCertificate").css({"font-weight": "" ,"color": ""}); //remove css style
           $(".nav"+Page).css({"font-weight": "bold" ,"color": "white"}); //add css style
           closeCallCard()
-          await sleepNow(500)
+          await sleepNow(200)
           $("#PageEntering").css("display","none");
           return;
         }
