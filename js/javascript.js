@@ -20,8 +20,6 @@ function closeCallCard(){
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
 async function PageEntering(Page){
   closeSideMenu()
-  window.scrollTo(0,0);
-  $("#Content").css({"visibility": "hidden"})
   $("#PageEntering").css("display","flex")
   // await sleepNow(1000)
   let xhttp; //using http request
@@ -29,15 +27,17 @@ async function PageEntering(Page){
     if (Page) {
         if (Page == "Cert1"){
           window.location = "https://ude.my/UC-946f62bc-142d-4d75-b945-f73c135910a7";
-          await sleepNow(1500)
+          await sleepNow(3000)
           return $("#PageEntering").css("display","none")
         }
         if (Page == "Cert2"){
           window.location = "https://ude.my/UC-a1c48038-82a7-4e66-aca2-9191215111a0";
-          await sleepNow(1500)
+          await sleepNow(3000)
           return $("#PageEntering").css("display","none")
         }
         else{
+          window.scrollTo(0,0);
+          $("#Content").css({"display": "none"})
           xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
               if (this.readyState == 4) {
@@ -47,7 +47,7 @@ async function PageEntering(Page){
           }
           xhttp.open("GET", "../"+Page+"/"+Page+".html", true);
           xhttp.send();
-          $("#Content").css({"visibility": "visible"})
+          $("#Content").css({"display": "block"})
           //==================
           $(".PageSection").html("<div>"+Page+"</div>");
           $(".navIntro").css({"font-weight": "" ,"color": ""}); //remove css style
