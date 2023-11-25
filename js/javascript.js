@@ -36,7 +36,7 @@ async function PageEntering(Page){
           return $("#PageEntering").css("display","none")
         }
         else{
-          $("#Content").css({"display": "none"})
+          $("#Content").css({"visibility": "hidden"})
           window.scrollTo({ top:0, left:0, behavior: "instant"});
           xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
@@ -55,7 +55,9 @@ async function PageEntering(Page){
           $(".navCertificate").css({"font-weight": "" ,"color": ""}); //remove css style
           $(".nav"+Page).css({"font-weight": "bold" ,"color": "white"}); //add css style
           closeCallCard()
+          $("#Content").css({"visibility": "visible"})
           await sleepNow(500)
+          $("#Content").css({"display": "none"})
           $("#Content").css({"display": "block"})
           $("#PageEntering").css("display","none");
           return;
