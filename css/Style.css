@@ -173,8 +173,8 @@
   top: 40px;
   height: 100%;
   width: 100%;
-  background-color: #000a18;
-  opacity: 80%;
+  background-color: #00060f;
+  opacity: 90%;
 }
 .loading {
   display: flex;
@@ -562,10 +562,6 @@ footer {
   width: 100%;
 }
 .EnlargeAction {
-  background-color: #000a18;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -573,7 +569,6 @@ footer {
   height: 100%;
   width: 100%;
   top: 40px;
-  opacity: 70%;
 }
 /* All media */
 @media (max-width: 600px) /*high value first*/

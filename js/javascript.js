@@ -11,7 +11,6 @@ function closeSideMenu(){
 function OpenCallCard(){
     $("#CallCard").css({"display":"block"})
     closeSideMenu()
-    $("#ContentBlocker").css("display","flex")
 }
 function closeCallCard(){
     $("#CallCard").css("display","none")
@@ -20,6 +19,7 @@ function closeCallCard(){
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
 async function PageEntering(Page){
   closeSideMenu()
+  $('#ContentBlocker').attr('style', 'display: flex !important');
   $("#PageEntering").css("display","flex")
   // await sleepNow(1000)
   let xhttp; //using http request
@@ -35,7 +35,8 @@ async function PageEntering(Page){
           await sleepNow(3000)
           return $("#PageEntering").css("display","none")
         }
-        else{
+        else{
+
           $("#Content").css({"display": "none"})
           window.scrollTo({ top:0, left:0, behavior: "instant"});
           xhttp = new XMLHttpRequest();
@@ -46,7 +47,8 @@ async function PageEntering(Page){
               }
           }
           xhttp.open("GET", "../"+Page+"/"+Page+".html", true);
-          xhttp.send();
+          xhttp.send();
+
           //==================
           $(".PageSection").html("<div>"+Page+"</div>");
           $(".navIntro").css({"font-weight": "" ,"color": ""}); //remove css style
@@ -54,11 +56,12 @@ async function PageEntering(Page){
           $(".navBackground").css({"font-weight": "" ,"color": ""}); //remove css style
           $(".navCertificate").css({"font-weight": "" ,"color": ""}); //remove css style
           $(".nav"+Page).css({"font-weight": "bold" ,"color": "white"}); //add css style
-          closeCallCard()
           await sleepNow(500)
+          $("#ContentBlocker").css("display","none")
           $("#PageEntering").css("display","none");
-         await sleepNow(100)
-         $("#Content").css({"display": "block"})
+          await sleepNow(100)
+          $("#Content").css({"display": "block"})
+
           return;
         }
     }
