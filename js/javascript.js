@@ -35,11 +35,13 @@ async function PageEntering(Page){
         if (Page == "Cert1"){
           window.location = "https://ude.my/UC-946f62bc-142d-4d75-b945-f73c135910a7";
           await sleepNow(3000)
+          $("#ContentBlocker").css("display","none")
           return $("#PageEntering").css("display","none")
         }
         if (Page == "Cert2"){
           window.location = "https://ude.my/UC-a1c48038-82a7-4e66-aca2-9191215111a0";
           await sleepNow(3000)
+          $("#ContentBlocker").css("display","none")
           return $("#PageEntering").css("display","none")
         }
         else{
