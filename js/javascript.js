@@ -17,6 +17,13 @@ function closeCallCard(){
     $("#ContentBlocker").css("display","none")
 }
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
+async function Direct(){
+  $(".floater").css({"display" : "none"})
+  await sleepNow(4500)
+  // similar behavior as clicking on a link
+  PageEntering('Intro')
+  $(".floater").css({"display" : "block"})
+}
 async function PageEntering(Page){
   closeSideMenu()
   $('#ContentBlocker').attr('style', 'display: flex !important');
@@ -46,7 +53,7 @@ async function PageEntering(Page){
                   if (this.status == 404) {element.innerHTML = "<h1>Page not found.</h1>";}
               }
           }
-          xhttp.open("GET", "../"+Page+"/"+Page+".html", true);
+          xhttp.open("GET", Page+"/"+Page+".html", true);
           xhttp.send();
 
           //==================
@@ -66,6 +73,7 @@ async function PageEntering(Page){
         }
     }
 }
+
 window.addEventListener("scroll", responsiveness);
 function responsiveness(){
   if(window.innerWidth < 992){
