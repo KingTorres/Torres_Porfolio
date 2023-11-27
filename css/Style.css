@@ -9,6 +9,7 @@
  html {
   scroll-behavior: smooth;
   background-color: #000000;
+  max-width: 100vw;
   /* removing x axis scrollbar */
   overflow-x: hidden;
  }
@@ -24,8 +25,6 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  max-height: 100vh;
-  max-width: 100vw;
   z-index: -2;
   opacity: 60%;
 }
@@ -99,7 +98,6 @@
 #Content{
   cursor: default;
   z-index: -1;
-  max-width: 100vw;
 }
 .PageSection {
   position: fixed;
