@@ -26,6 +26,7 @@ async function Direct(){
 }
 async function PageEntering(Page){
   closeSideMenu()
+  $(".navBar").addClass("navload");
   $('#ContentBlocker').attr('style', 'display: flex !important');
   $("#PageEntering").css("display","flex")
   // await sleepNow(1000)
@@ -70,7 +71,7 @@ async function PageEntering(Page){
           $("#PageEntering").css("display","none");
           await sleepNow(100)
           $("#Content").css({"display": "block"})
-
+          $(".navBar").removeClass("navload");
           return;
         }
     }

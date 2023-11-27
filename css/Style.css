@@ -58,6 +58,40 @@
   font-variant: small-caps;
   margin-right: 3%;
 }
+.navload{
+  background: linear-gradient(327deg, #19191b, #19191b, #008d97, #19191b, #19191b);
+  background-size: 600% 600%;
+  animation: navload 2s ease infinite;
+  -webkit-animation: navload 2s ease infinite;
+  -moz-animation: navload 2s ease infinite;
+  -o-animation: navload 2s ease infinite;
+  -ms-animation: navload 2s ease infinite;
+}
+@keyframes navload {
+  0%{background-position:0% 5%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 5%}
+}
+@-moz-keyframes navload {
+  0%{background-position:0% 5%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 5%}
+}
+@-webkit-keyframes navload {
+  0%{background-position:0% 5%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 5%}
+}
+@-o-keyframes navload {
+  0%{background-position:0% 5%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 5%}
+}
+@-ms-keyframes navload {
+  0%{background-position:0% 5%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 5%}
+}
 .navMenu div:hover, .sideMenu div:hover {
   color: #ffffff;
 }
