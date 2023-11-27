@@ -181,11 +181,18 @@ function reveal() {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementVisible = 210;
-  
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
         reveals[i].classList.remove("active");
+      }
+    }
+    //reset hidden
+    var sect = document.querySelectorAll(".Section_Card");
+    if ($(window).scrollTop() < 10){
+      for (var i = 0; i < sect.length; i++)
+      {
+        sect[i].classList.remove("active");
       }
     }
 }
