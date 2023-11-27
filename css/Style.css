@@ -12,7 +12,7 @@
   /* removing x axis scrollbar */
   overflow-x: hidden;
  }
-.fixedBG div {
+.fixedBG {
   background-image: url("../images/5570833.webp");
   background-size: cover;
   background-position: center center;
@@ -24,10 +24,12 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
   z-index: -2;
   opacity: 60%;
 }
-.fixedBG div div{
+.fixedBG div {
   height: 300px;
   width: 300px;
   background-image: url("../images/svg/MT_Logo.svg");
@@ -97,6 +99,7 @@
 #Content{
   cursor: default;
   z-index: -1;
+  max-width: 100vw;
 }
 .PageSection {
   position: fixed;
