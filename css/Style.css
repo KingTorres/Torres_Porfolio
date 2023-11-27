@@ -9,8 +9,10 @@
  html {
   scroll-behavior: smooth;
   background-color: #000000;
+  /* removing x axis scrollbar */
+  overflow-x: hidden;
  }
-.fixedBG {
+.fixedBG div {
   background-image: url("../images/5570833.webp");
   background-size: cover;
   background-position: center center;
@@ -25,7 +27,7 @@
   z-index: -2;
   opacity: 60%;
 }
-.fixedBG div{
+.fixedBG div div{
   height: 300px;
   width: 300px;
   background-image: url("../images/svg/MT_Logo.svg");
@@ -33,6 +35,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.1;
+  position: fixed;
 }
 /* Navbar */
 .navBar
@@ -486,8 +489,8 @@
 }
 /* Right */
 @keyframes fade-right-scroll {
-  0% { transform: translateX(50px); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
+  0% { transform: translateX(50px); opacity: 0;}
+  100% { transform: translateX(0); opacity: 1;}
 }
 @-moz-keyframes fade-right-scroll {
   0% { transform: translateX(50px); opacity: 0; }
