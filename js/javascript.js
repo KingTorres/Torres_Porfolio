@@ -69,17 +69,18 @@ async function PageEntering(Page){
             {
               act[i].classList.add("active");
             }
-            await sleepNow(500)
+            await sleepNow(200)
+            window.scrollTo({ left:0, top:0, behavior: "instant"});
+            await sleepNow(200)
             for (i=0; i < act.length; i++)
             {
               act[i].classList.remove("active");
             }
-          window.scrollTo({ left:0, top:0, behavior: "instant"});
           $("#Content").css({"visibility": "visible"})
           document.querySelector(".Contenthead").classList.remove("active");
           $("#ContentBlocker").css("display","none")
           $("#PageEntering").css("display","none");
-          await sleepNow(200)
+          await sleepNow(300)
           document.querySelector(".Contenthead").classList.add("active");
           return;
         }
