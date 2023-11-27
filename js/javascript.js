@@ -45,9 +45,15 @@ async function PageEntering(Page){
           return $("#PageEntering").css("display","none")
         }
         else{
-
-          $("#Content").css({"display": "none"})
-          window.scrollTo({ top:0, left:0, behavior: "instant"});
+          $("#Content").css({"visibility": "hidden"})
+          //index.html elements changes
+          $(".PageSection").html("<div>"+Page+"</div>");
+          $(".navIntro").css({"font-weight": "" ,"color": ""}); //remove css style
+          $(".navSkills").css({"font-weight": "" ,"color": ""}); //remove css style
+          $(".navBackground").css({"font-weight": "" ,"color": ""}); //remove css style
+          $(".navCertificate").css({"font-weight": "" ,"color": ""}); //remove css style
+          $(".nav"+Page).css({"font-weight": "bold" ,"color": "white"}); //add css style
+          //replacing #Content innerHTML
           xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
               if (this.readyState == 4) {
@@ -57,25 +63,28 @@ async function PageEntering(Page){
           }
           xhttp.open("GET", Page+"/"+Page+".html", true);
           xhttp.send();
-
-          //==================
-          $(".PageSection").html("<div>"+Page+"</div>");
-          $(".navIntro").css({"font-weight": "" ,"color": ""}); //remove css style
-          $(".navSkills").css({"font-weight": "" ,"color": ""}); //remove css style
-          $(".navBackground").css({"font-weight": "" ,"color": ""}); //remove css style
-          $(".navCertificate").css({"font-weight": "" ,"color": ""}); //remove css style
-          $(".nav"+Page).css({"font-weight": "bold" ,"color": "white"}); //add css style
-          await sleepNow(500)
+          //show and hide cards
+            var act = document.querySelectorAll(".reveal");
+            for (i=0; i < act.length; i++)
+            {
+              act[i].classList.add("active");
+            }
+            await sleepNow(500)
+            for (i=0; i < act.length; i++)
+            {
+              act[i].classList.remove("active");
+            }
+          window.scrollTo({ left:0, top:0, behavior: "instant"});
+          $("#Content").css({"visibility": "visible"})
+          document.querySelector(".Contenthead").classList.remove("active");
           $("#ContentBlocker").css("display","none")
           $("#PageEntering").css("display","none");
-          await sleepNow(100)
-          $("#Content").css({"display": "block"})
-
+          await sleepNow(200)
+          document.querySelector(".Contenthead").classList.add("active");
           return;
         }
     }
 }
-
 window.addEventListener("scroll", responsiveness);
 function responsiveness(){
   if(window.innerWidth < 992){
