@@ -18,11 +18,24 @@ function closeCallCard(){
 }
 const sleepNow = (king) => new Promise((resolve) => setTimeout(resolve, king)) //Promise method
 async function Direct(){
+  $("html").css({"overflow-y" : "hidden"})
   $(".floater").css({"display" : "none"})
-  await sleepNow(4500)
-  // similar behavior as clicking on a link
+  $("#PageEntering").css({"visibility":"hidden"})
+  await sleepNow(500)
   PageEntering('Intro')
+  await sleepNow(500)
+  PageEntering('Skills')
+  await sleepNow(500)
+  PageEntering('Background')
+  await sleepNow(500)
+  PageEntering('Certificate')
+  // =====================
+  await sleepNow(2500)
   $(".floater").css({"display" : "block"})
+  PageEntering('Intro')
+  $("#PageEntering").css({"visibility":"visible"})
+  $("html").css({"overflow-y" : "scroll"})
+  $("#preload").html("");
 }
 async function PageEntering(Page){
   closeSideMenu()
