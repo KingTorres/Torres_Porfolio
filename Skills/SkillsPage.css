@@ -36,8 +36,9 @@
         width: 30px;
         height: 30px;
     }
-    .Skill_icon {
-        margin: 3%;
+    #card-1 .Skill_icon {
+        margin: 2%;
+        margin-top: 0px;
     }
 }
 .Contenthead > h1 {

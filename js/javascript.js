@@ -83,7 +83,7 @@ function responsiveness(){
       $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
       if(i==1)
       {
-        $('#card-' + [i] + ' .Skill_icon').addClass('col-1')
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-lg-1')
       }else{
         $('#card-' + [i] + ' .Skill_icon').addClass('col-2')
       }
@@ -93,7 +93,7 @@ function responsiveness(){
     for (i=1;i<=3;i++){
       if(i==1)
       {
-        $('#card-' + [i] + ' .Skill_icon').removeClass('col-1')
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-lg-1')
       }else{
         $('#card-' + [i] + ' .Skill_icon').removeClass('col-2')
       }
@@ -107,7 +107,7 @@ $(window).on("resize", function(){ //If page is resizing
       $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
       if(i==1)
       {
-        $('#card-' + [i] + ' .Skill_icon').addClass('col-1')
+        $('#card-' + [i] + ' .Skill_icon').addClass('col-lg-1')
       }else{
         $('#card-' + [i] + ' .Skill_icon').addClass('col-2')
       }
@@ -117,7 +117,7 @@ $(window).on("resize", function(){ //If page is resizing
     for (i=1;i<=3;i++){
       if(i==1)
       {
-        $('#card-' + [i] + ' .Skill_icon').removeClass('col-1')
+        $('#card-' + [i] + ' .Skill_icon').removeClass('col-lg-1')
       }else{
         $('#card-' + [i] + ' .Skill_icon').removeClass('col-2')
       }
