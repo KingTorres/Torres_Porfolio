@@ -15,12 +15,6 @@
     color: #cacaca;
     font-size: medium;
 }
-.Intro_Container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
 .Intro_name{
     font-size: 16px;
     color: #bebebe;
@@ -83,5 +77,15 @@
 {
   .Section_Card p{
     font-size: medium;
+  }
+}
+
+@media (min-width: 992px)
+{
+  #Intro_Container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }

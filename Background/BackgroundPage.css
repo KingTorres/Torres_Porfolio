@@ -26,15 +26,6 @@
     border-bottom: 1px solid #0d2547;
     margin-bottom: 12px;
 }
-.Background_Container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-.BackgroundItem2 {
-    grid-row: span 2;
-}
 .Contenthead > h1 {
     background: linear-gradient(140deg, #010a18, #0d2547, #010a18);
     background-repeat: repeat;
@@ -64,5 +55,17 @@
 {
   .svg {
     left: 4%;
+  }
+}
+@media (min-width: 992px)
+{
+  #Background_Container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #BackgroundItem2 {
+    grid-row: span 2;
   }
 }

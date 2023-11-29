@@ -58,7 +58,6 @@ async function PageEntering(Page){
           }
           xhttp.open("GET", Page+"/"+Page+".html", true);
           xhttp.send();
-
           //==================
           $(".PageSection").html("<div>"+Page+"</div>");
           $(".navIntro").css({"font-weight": "" ,"color": ""}); //remove css style
@@ -79,19 +78,6 @@ async function PageEntering(Page){
 
 window.addEventListener("scroll", responsiveness);
 function responsiveness(){
-  if(window.innerWidth < 992){
-    $('#Background_Container').removeClass('Background_Container')
-    $('#BackgroundItem2').removeClass('BackgroundItem2')
-    // Intro
-    $('#Intro_Container').removeClass('Intro_Container')
-  }
-  else{
-    // Background
-    $('#Background_Container').addClass('Background_Container')
-    $('#BackgroundItem2').addClass('BackgroundItem2')
-    // Intro
-    $('#Intro_Container').addClass('Intro_Container')
-  }
   if(window.innerWidth >= 992){
     for (i=1;i<=3;i++){
       $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
@@ -116,20 +102,6 @@ function responsiveness(){
   }
 }
 $(window).on("resize", function(){ //If page is resizing
-  if(window.innerWidth < 992){
-    $('#Background_Container').removeClass('Background_Container')
-    $('#BackgroundItem2').removeClass('BackgroundItem2')
-    // Intro
-    $('#Intro_Container').removeClass('Intro_Container')
-  }
-  else{
-      // Background
-    $('#Background_Container').addClass('Background_Container')
-    $('#BackgroundItem2').addClass('BackgroundItem2')
-    // Intro
-    $('#Intro_Container').addClass('Intro_Container')
-  }
-
   if(window.innerWidth >= 992){
     for (i=1;i<=3;i++){
       $('#card-' + [i] + ' .Skill_icon').removeClass('col-3')
