@@ -40,8 +40,8 @@ async function Direct(){
 async function PageEntering(Page){
   closeSideMenu()
   $(".navBar").addClass("navload");
-  $('#ContentBlocker').attr('style', 'display: flex !important');
   $("#PageEntering").css("display","flex")
+  $(".fixedBG div").css({"display" : "none"})
   // await sleepNow(1000)
   let xhttp; //using http request
   let element = document.getElementById("Content"); //target id parameter
@@ -49,13 +49,11 @@ async function PageEntering(Page){
         if (Page == "Cert1"){
           window.location = "https://ude.my/UC-946f62bc-142d-4d75-b945-f73c135910a7";
           await sleepNow(3000)
-          $("#ContentBlocker").css("display","none")
           return $("#PageEntering").css("display","none")
         }
         if (Page == "Cert2"){
           window.location = "https://ude.my/UC-a1c48038-82a7-4e66-aca2-9191215111a0";
           await sleepNow(3000)
-          $("#ContentBlocker").css("display","none")
           return $("#PageEntering").css("display","none")
         }
         else{
@@ -79,8 +77,8 @@ async function PageEntering(Page){
           $(".navCertificate").css({"font-weight": "" ,"color": ""}); //remove css style
           $(".nav"+Page).css({"font-weight": "bold" ,"color": "white"}); //add css style
           await sleepNow(500)
-          $("#ContentBlocker").css("display","none")
           $("#PageEntering").css("display","none");
+          $(".fixedBG div").css({"display" : "block"})
           await sleepNow(100)
           $("#Content").css({"display": "block"})
           $(".navBar").removeClass("navload");
