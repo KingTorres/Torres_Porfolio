@@ -72,23 +72,18 @@
 @media (min-width: 992px)
 {
     .CertCard_body img {
-        width: 560px;
+        width: 360px;
     }
     .Section_Card {
-        width: 80%;
+        width: 100%;
         margin: auto;
         margin-bottom: 3%;
     }
-}
-@media (min-width: 1200px)
-{
-    .CertCard_body img {
-        width: 560px;
-    }
-    .Section_Card {
-        width: 65%;
-        margin: auto;
-        margin-bottom: 3%;
+    #Cert_Container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
 /* max width */
