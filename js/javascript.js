@@ -82,8 +82,6 @@ function responsiveness(){
   if(window.innerWidth < 992){
     $('#Background_Container').removeClass('Background_Container')
     $('#BackgroundItem2').removeClass('BackgroundItem2')
-    // Skills
-    $('#Skills_Container').removeClass('Skills_Container')
     // Intro
     $('#Intro_Container').removeClass('Intro_Container')
   }
@@ -91,8 +89,6 @@ function responsiveness(){
     // Background
     $('#Background_Container').addClass('Background_Container')
     $('#BackgroundItem2').addClass('BackgroundItem2')
-    // Skills
-    $('#Skills_Container').addClass('Skills_Container')
     // Intro
     $('#Intro_Container').addClass('Intro_Container')
   }
@@ -123,8 +119,6 @@ $(window).on("resize", function(){ //If page is resizing
   if(window.innerWidth < 992){
     $('#Background_Container').removeClass('Background_Container')
     $('#BackgroundItem2').removeClass('BackgroundItem2')
-    // Skills
-    $('#Skills_Container').removeClass('Skills_Container')
     // Intro
     $('#Intro_Container').removeClass('Intro_Container')
   }
@@ -132,8 +126,6 @@ $(window).on("resize", function(){ //If page is resizing
       // Background
     $('#Background_Container').addClass('Background_Container')
     $('#BackgroundItem2').addClass('BackgroundItem2')
-    // Skills
-    $('#Skills_Container').addClass('Skills_Container')
     // Intro
     $('#Intro_Container').addClass('Intro_Container')
   }

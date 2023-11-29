@@ -31,11 +31,6 @@
     font-variant: normal;
     font-weight: bold;
 }
-.Skills_Container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 @media (min-width: 992px) {
     .Section_Card img {
         width: 30px;
@@ -66,6 +61,11 @@
 }
 @media (max-width: 991px)
 {
+    #Skills_Container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr; /* 1 column each try to make it (1fr 1fr 1fr)*/
+    }
   .svg {
     left: 29%;
   }
@@ -78,13 +78,13 @@
 }
 @media (min-width: 992px)
 {
-    .Skills_Container {
+    #Skills_Container {
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
     #card-1 {
-        grid-column: span 3;
+        grid-column: span 2;
     }
 }
